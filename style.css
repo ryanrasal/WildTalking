@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
 
 /* NAVBAR  */
 nav {
     display: flex;
     position: fixed;
     bottom: 0;
+    left:0;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
     color: white;
-    justify-content: space-between;
     height: 40px;
     width: 100%;
 }
@@ -27,8 +31,8 @@ nav ul {
  
 nav ul li {
     font-size: 18px;
+    margin: 10px;
     list-style-type: none;
-    padding-right: 10px;
 }
 
 nav ul li a {
@@ -36,15 +40,7 @@ nav ul li a {
     color: white;
 }
 
-
-
-
 /* Header */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -55,13 +51,16 @@ h1 {
 
 .background {
     background-image: url("./Assets/conference.jpg");
-    background-size: 100%;
+    background-size: 100vh;
     padding: 30px;
+    filter: blur(5px);
 }
 
-.background p {
+.text {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    position: relative;
+    z-index: 10;
     text-shadow: black 1px 1px 2px;
 }
 
@@ -145,5 +144,83 @@ hr {
     justify-content: space-around;
     padding: 30px;
 }
+/******************** CONTACT  *********************/
+.formulaire {
+    padding-bottom: 20px;
+}
+.form {
+    background-color: white;
+    text-align: center;
+    height: 500px;
+    border-radius: 10px;
+    margin: 0 20px 50px 20px;
+  }
+  
+  .div-input {
+    padding-top: 70px;
+  }
+  
+  .input-form {
+    width: 75%;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .input-message {
+    width: 85%;
+    padding-bottom: 100px;
+    border-radius: 10px;
+  }
+  
+  .reservation {
+    position: relative;
+    display: inline-block;
+    top: 43px;
+    left: 45px;
+    font-size: 2em;
+  }
+  .resultDateForm {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .envoyez {
+    background-color: black;
+    color: white;
+    width: 75%;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    padding: 15px 15px;
+  }
+@media screen and (min-width: 1200px) {
+    nav {
+        position: relative;
+        top: 0;
+        height: 70px;
+        align-items: center;
+        font-size: 25px;
+    }
 
+    .hiddenMobile {
+        display: block;
+    }
 
+    nav p {
+        padding-left: 15px;
+    }
+    nav ul li {
+        font-size: 25px;
+    }
+    nav ul li:hover {
+        text-decoration: underline;
+    }
+    }
