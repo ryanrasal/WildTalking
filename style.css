@@ -63,7 +63,7 @@ h1 {
 .background {
     background-image: url("./Assets/conference.jpg");
     filter: blur(2px);
-    height: 20vh;
+    height: 10vh;
     background-size: 100%;
     padding: 30px;
     position: absolute;
@@ -95,7 +95,7 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding: 10px;
+    padding: 30px 30px 15px 30px;
 }
 
 .concept {
@@ -151,6 +151,7 @@ hr {
     background-size: 100%;
     padding: 30px;
     color: white;
+    background-repeat: no-repeat;
 }
 
 .strengths1 {
