@@ -16,9 +16,11 @@ nav {
     height: 40px;
     width: 100%;
 }
+
 .nav-opacity {
     opacity: 0.33;
-  }
+}
+
 .hiddenMobile {
     display: none;
 }
@@ -27,8 +29,9 @@ nav ul {
     display: flex;
     margin: 0 auto;
     align-items: center;
+
 }
- 
+
 nav ul li {
     font-size: 18px;
     margin: 10px;
@@ -42,6 +45,10 @@ nav ul li a {
 
 /* Header */
 
+body {
+    background-color: #FAFCFF;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -49,25 +56,46 @@ h1 {
     padding: 5px;
 }
 
-.background {
-    background-image: url("./Assets/conference.jpg");
-    background-size: 100vh;
-    padding: 30px;
-    filter: blur(5px);
+.backgroundDiv {
+    position: relative;
 }
 
-.text {
+.background {
+    background-image: url("./Assets/conference.jpg");
+    filter: blur(2px);
+    height: 10vh;
+    background-size: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.backgroundText {
     font-family: 'Montserrat', sans-serif;
     color: white;
     position: relative;
     z-index: 10;
     text-shadow: black 1px 1px 2px;
+    position: relative;
+    padding: 10px;
+    
+}
+
+.backgroundText h1 {
+    text-align: end;
+}
+
+.backgroundText p {
+    text-align: center;
+    padding-top: 20px;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding: 10px;
+    padding: 30px 30px 15px 30px;
 }
 
 .concept {
@@ -79,21 +107,21 @@ h2 {
 
 .concept p {
     width: 50%;
-    font-size: 0.8rem;
-    line-height: 1.5;
+    font-size: 0.7rem;
+    line-height: 1.8;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px;
+    padding: 5px;
 }
 
 .concept img {
-    padding: 10px;
-    height: 125px;
+    height: 120%;
     width: 50%;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 hr {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px 20px 20px 20px;
 }
 
 .conceptIdea {
@@ -102,47 +130,57 @@ hr {
 }
 
 .conceptIdea img {
+    height: 120%;
     width: 50%;
-    height: 125px;
-    padding: 10px;
-
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .conceptIdea p {
     width: 50%;
-    font-size: 0.8rem;
-    line-height: 2;
+    font-size: 0.7rem;
+    line-height: 1.8;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .strengths {
-    height: 170px;
+    height: 225px;
     background-image: url("./Assets/idea.jpg");
     background-size: 100%;
     padding: 30px;
-}
-
-.strengths p {
     color: white;
+    background-repeat: no-repeat;
 }
 
 .strengths1 {
+    color: white;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: baseline;
+    padding-top: 30px;
 }
 
 .strengths2 {
+    color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 30px;
 }
 
-.strengths3 {
+.strengths4-5 {
+    color: white;
+    text-align: center;
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
+}
+
+.strengths5{
+    padding-left: 100px;
+}
+.strengths3 {
+    color: white;
+    display: flex;
+    padding: 30px 0 30px 70px;
 }
 /******************** CONTACT  *********************/
 .formulaire {
@@ -201,6 +239,7 @@ hr {
   textarea {
     padding: 15px 15px;
   }
+
 @media screen and (min-width: 1200px) {
     nav {
         position: relative;
@@ -209,7 +248,6 @@ hr {
         align-items: center;
         font-size: 25px;
     }
-
     .hiddenMobile {
         display: block;
     }
@@ -222,5 +260,11 @@ hr {
     }
     nav ul li:hover {
         text-decoration: underline;
+    }
+    .background {
+        height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     }
