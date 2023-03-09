@@ -87,13 +87,33 @@ document.getElementById('formulaire').addEventListener('submit', (e) => {
     if (!inputs[i].value) {
       erreur = 'Veuillez renseigner tous les champs';
     }
-  }
-  if (erreur) {
-    e.preventDefault();
-    document.getElementById('erreur').innerHTML = erreur;
-    return false;
-  } else {
-    e.preventDefault();
-    alert('Message envoyé !');
-  }
+    if (erreur) {
+        e.preventDefault();
+        document.getElementById('erreur').innerHTML = erreur;
+        return false;
+    } else {
+        e.preventDefault();
+        alert("Message envoyé !");
+    }
+}
 });
+
+const animateElements = document.querySelectorAll('.animate');
+
+const animateElement = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+}
+
+const observer = new IntersectionObserver(animateElement, {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.2
+});
+
+animateElements.forEach((el) => observer.observe(el));
