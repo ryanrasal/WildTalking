@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 /* NAVBAR  */
 nav {
     display: flex;
@@ -40,5 +34,109 @@ nav ul li a {
     color: white;
 }
 
+
+
+
+/* Header */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: black 1px 1px 2px;
+    padding: 5px;
+}
+
+.background {
+    background-image: url("./Assets/conference.jpg");
+    background-size: 100%;
+    padding: 30px;
+}
+
+.background p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: black 1px 1px 2px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.concept {
+    display: flex;
+    height: 125px;
+    padding: 10px;
+}
+
+
+.concept p {
+    width: 50%;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+.concept img {
+    padding: 10px;
+    height: 125px;
+    width: 50%;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.conceptIdea {
+    display: flex;
+    padding: 10px;
+}
+
+.conceptIdea img {
+    width: 50%;
+    height: 125px;
+    padding: 10px;
+
+}
+
+.conceptIdea p {
+    width: 50%;
+    font-size: 0.8rem;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+.strengths {
+    height: 170px;
+    background-image: url("./Assets/idea.jpg");
+    background-size: 100%;
+    padding: 30px;
+}
+
+.strengths p {
+    color: white;
+}
+
+.strengths1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.strengths2 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.strengths3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
 
 
