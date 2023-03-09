@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />    
+   <!-- Font awsome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
-    <title>Wild Talking</title>
+
+    <title>Star Rating in HTML CSS & Javascript</title>
 </head>
 
 <body>
-     <!----------- NAVBAR ------------->
+    <!----------- NAVBAR ------------->
 
     <nav class="nav">
         <p class="hiddenMobile">Wild Talking 🎤</p>
@@ -61,6 +64,38 @@
         </div></div>
 </div>
 
+<!-- Star rating + Comments -->
+
+<div class="rating-box">
+    <header>Partage nous ton avis</header>
+    <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <div class='form-area' id='form-area'>
+        <form method="post" action="">
+            <p>
+                <input id="form-textarea" type="text" name="form-textarea">
+            </p>
+        </form>
+    </div>
+    <div class="submitButton">
+        <button type="submit" id="submitButton">Soumettre</button>
+    </div>
+    <!-- <div class="comments-area" id="comments-area">
+        <div class="comments-card">
+            <p> Mon commentaire blabla </p>  
+        </div>       
+</div> -->
+
+<div>
+    <p id="message-error"></p>
+</div>
+</div>
+
  <!----------- CONTACT ------------->
 
  <h2 class="reservation" id="contactform">Réservez votre <br> Séance</h2>
@@ -86,6 +121,14 @@
      </form>
  </section>
 
+ <!-- Map -->
+ <div class="map">
+    <div class="map-title">
+        <p>Ou sommes nous?</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.967201933927!2d4.8271744!3d45.7462982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Training%20Developer%20Web%2C%20Data%20Analyst!5e0!3m2!1sro!2sfr!4v1678360557523!5m2!1sro!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+ 
 </body>
 
 </html>
