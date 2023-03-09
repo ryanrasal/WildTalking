@@ -156,30 +156,13 @@ hr {
     margin: 0 20px 50px 20px;
   }
   
-  .div-input {
-    padding-top: 70px;
-  }
-  
   .input-form {
     width: 75%;
     margin-bottom: 30px;
     padding: 15px;
     border-radius: 10px;
   }
-  
-  .input-message {
-    width: 85%;
-    padding-bottom: 100px;
-    border-radius: 10px;
-  }
-  
-  .reservation {
-    position: relative;
-    display: inline-block;
-    top: 43px;
-    left: 45px;
-    font-size: 2em;
-  }
+
   .resultDateForm {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -222,5 +205,19 @@ hr {
     }
     nav ul li:hover {
         text-decoration: underline;
+    }
+    .formulaire {
+        width: 50%;
+    }
+    .containerTitleForm {
+        display: flex;
+        justify-content: center;
+    }
+    .input-form {
+        width: 40%;
+    }
+
+    .envoyez {
+        width: 40%;
     }
     }

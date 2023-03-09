@@ -61,17 +61,16 @@
 
  <!----------- CONTACT ------------->
 
- <h2 class="reservation" id="contactform">Réservez votre <br> Séance</h2>
  <section class="formulaire">
+    <div class="containerTitleForm">
+        <h2 class="reservation" id="contactform">Réservez votre <br> Séance</h2>
+    </div>
      <form action="submit" class="form" id="formulaire">
          <div class="div-input">
-             <input type="text" id="name" name="user_name" class="input-form" placeholder="Name">
+             <input type="text" id="name" name="user_name" class="input-form" placeholder="Nom et Prénom">
          </div>
          <div>
              <input type="email" id="mail" name="user_mail" class="input-form" placeholder="Email">
-         </div>
-         <div>
-             <input id="msg" name="user_message" class="input-message" placeholder="Message">
          </div>
          <div>
             <label for="date">Sélectionnez une date :</label>
@@ -83,7 +82,6 @@
          <p id="erreur" style="color: red"></p>
      </form>
  </section>
-
 </body>
 
 </html>
