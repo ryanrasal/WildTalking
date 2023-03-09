@@ -14,7 +14,6 @@ nav {
     font-family: 'Montserrat', sans-serif;
     background-color: black;
     color: white;
-    justify-content: space-between;
     height: 40px;
     width: 100%;
 }
@@ -27,19 +26,19 @@ nav {
 
 nav ul {
     display: flex;
-    margin: 0 auto;
     align-items: center;
 }
  
 nav ul li {
     font-size: 18px;
+    margin: 10px;
     list-style-type: none;
-    padding-right: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
 }
+
 
 
