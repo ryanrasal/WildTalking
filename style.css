@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 /* body{
     height: 100vh;
     display:flex;
@@ -18,7 +20,7 @@ nav {
     display: flex;
     position: fixed;
     bottom: 0;
-    left:0;
+    left: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
     color: white;
@@ -72,7 +74,7 @@ h1 {
 .background {
     background-image: url("./Assets/conference.jpg");
     filter: blur(2px);
-    height: 10vh;
+    height: 17vh;
     background-size: 100%;
     padding: 30px;
     position: absolute;
@@ -89,7 +91,7 @@ h1 {
     text-shadow: black 1px 1px 2px;
     position: relative;
     padding: 10px;
-    
+
 }
 
 .backgroundText h1 {
@@ -183,9 +185,10 @@ hr {
     display: flex;
 }
 
-.strengths5{
+.strengths5 {
     padding-left: 100px;
 }
+
 .strengths3 {
     color: white;
     display: flex;
@@ -194,64 +197,67 @@ hr {
 
 /* Star rating + comments */
 
-.rating-box{
-    position:relative;
-    background:#fff;
+.rating-box {
+    position: relative;
+    background: #fff;
     padding: 25px 25px 35px;
     border-radius: 25px;
-    box-shadow:0 5px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
-.rating-box header{
+.rating-box header {
     font-size: 22px;
-    color:#dadada;
-    font-weight:500;
+    color: #dadada;
+    font-weight: 500;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .rating-box .stars {
-    display:flex;
-    align-items:center;
-    gap:25px;
-}
-.stars i{
-color: #e6e6e6;
-font-size:35px;
-cursor:pointer
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
-.stars i.active{
-    color:#ff9c1a;
+.stars i {
+    color: #e6e6e6;
+    font-size: 35px;
+    cursor: pointer
 }
-#form-textarea{
+
+.stars i.active {
+    color: #ff9c1a;
+}
+
+#form-textarea {
     margin-top: 40px;
     height: 100px;
     width: 100%;
     border-radius: 7.5px;
-    border:none;
+    border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding:7px;
+    padding: 7px;
     font-size: 15px;
 }
 
-.submitButton{
- margin-top: 20px;   
- border-radius: 20px;
- display: flex;
- justify-content: center;
-}
-#submitButton{
-    padding: 10px;
-    border-radius: 5px;  
-    border: none;  
-    background-color: #9DC2ED;
-    font-size: 16px;
-    color:#676B73;
+.submitButton {
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.comments-area{
-    margin-top:20px;
+#submitButton {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #9DC2ED;
+    font-size: 16px;
+    color: #676B73;
+}
+
+.comments-area {
+    margin-top: 20px;
     background-color: green;
     padding: 15px;
     border-radius: 5px;
@@ -262,44 +268,47 @@ cursor:pointer
 .formulaire {
     padding-bottom: 20px;
 }
+
 .form {
     background-color: white;
     text-align: center;
     height: 500px;
     border-radius: 10px;
     margin: 0 20px 50px 20px;
-  }
-  
-  .div-input {
+}
+
+.div-input {
     padding-top: 70px;
-  }
-  
-  .input-form {
+}
+
+.input-form {
     width: 75%;
     margin-bottom: 30px;
     padding: 15px;
     border-radius: 10px;
-  }
-  
-  .input-message {
+}
+
+.input-message {
     width: 85%;
     padding-bottom: 100px;
     border-radius: 10px;
-  }
-  
-  .reservation {
+}
+
+.reservation {
     position: relative;
     display: inline-block;
     top: 43px;
     left: 45px;
     font-size: 2em;
-  }
-  .resultDateForm {
+}
+
+.resultDateForm {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-  }
-  .envoyez {
+}
+
+.envoyez {
     background-color: black;
     color: white;
     width: 75%;
@@ -310,11 +319,34 @@ cursor:pointer
     border-radius: 10px;
     margin-top: 20px;
     cursor: pointer;
-  }
-  
-  textarea {
+}
+
+textarea {
     padding: 15px 15px;
-  }
+}
+
+/* MAP */
+.map {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+iframe {
+    width: 95%;
+    height: 100%;
+}
+
+.map-title {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: grey;
+}
 
 @media screen and (min-width: 1200px) {
     nav {
@@ -324,6 +356,7 @@ cursor:pointer
         align-items: center;
         font-size: 25px;
     }
+
     .hiddenMobile {
         display: block;
     }
@@ -331,12 +364,15 @@ cursor:pointer
     nav p {
         padding-left: 15px;
     }
+
     nav ul li {
         font-size: 25px;
     }
+
     nav ul li:hover {
         text-decoration: underline;
     }
+
     .background {
         height: 90vh;
         background-size: cover;
@@ -354,19 +390,64 @@ cursor:pointer
 }
     }
 
-
-    /* MAP */
-    .map{
-        margin-bottom: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;  
-        flex-direction: column;   
-       
+    .backgroundText p {
+        padding-top: 200px;
+        font-size: 5rem;
     }
-    iframe{
-        width: 95%;
-       height: 100%;
+
+    h2 {
+        font-size: 3rem;
+        padding: 25% 25% 10% 25%;
+    }
+
+    .concept p {
+        font-size: 1.2rem;
+        padding-left: 5%;
+    }
+
+    .concept img {
+        height: 300px;
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    hr {
+        margin: 250px 100px;
+    }
+
+    .conceptIdea img {
+        height: 90%;
+        width: 40%;
+        border-radius: 10px;
+    }
+
+    .conceptIdea p {
+        font-size: 1.2rem;
+        padding-left: 20%;
+    }
+
+    .strengths {
+        height: 880px;
+        width: 100%;
+    }
+
+    .strengths2 {
+        font-size: 3rem;
+        padding-left: 300px;
+        padding-top: 260px;
+        position: absolute;
+        top: 100%;
+        transform-origin: center bottom;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-name: apparition;
+    }
+
+    .containerAnimate2 {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
     }
 
     .map-title{
@@ -383,3 +464,72 @@ cursor:pointer
     }
 
  
+    .pAnimate {
+        padding-right: 300px;
+    }
+
+    .strengths4-5 {
+        font-size: 3rem;
+        padding-top: 150px;
+        padding-left: 150px;
+        position: absolute;
+        top: 100%;
+        transform-origin: center bottom;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-name: apparition2;
+    }
+
+
+    .strengths5 {
+        font-size: 3rem;
+        padding-left: 700px;
+    }
+
+    .strengths3 {
+        font-size: 3rem;
+        padding-top: 150px;
+        padding-left: 500px;
+        position: absolute;
+        transform-origin: center bottom;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-name: apparition3;
+    }
+
+
+    @keyframes apparition {
+        0% {
+            top: 100%;
+            left: 100%;
+        }
+
+        100% {
+            top: 380%;
+            left: 15%;
+        }
+    }
+
+    @keyframes apparition2 {
+        0% {
+            top: 100%;
+            left: 100%;
+        }
+
+        100% {
+            top: 370%;
+        }
+    }
+
+    @keyframes apparition3 {
+        0% {
+            top: 100%;
+            left: 100%;
+        }
+
+        100% {
+            top: 345%;
+        }
+    }
+
+

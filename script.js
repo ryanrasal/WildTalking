@@ -98,13 +98,27 @@ document.getElementById('formulaire').addEventListener('submit', (e) => {
     if (!inputs[i].value) {
       erreur = 'Veuillez renseigner tous les champs';
     }
-  }
-  if (erreur) {
-    e.preventDefault();
-    document.getElementById('erreur').innerHTML = erreur;
-    return false;
-  } else {
-    e.preventDefault();
-    alert('Message envoyé !');
-  }
+    if (erreur) {
+        e.preventDefault();
+        document.getElementById('erreur').innerHTML = erreur;
+        return false;
+    } else {
+        e.preventDefault();
+        alert("Message envoyé !");
+    }
+}
 });
+
+
+window.addEventListener('scroll', function() {
+  // code pour récupérer la position de défilement (scroll) de l'utilisateur
+  let scrollPosition = window.scrollY;
+  console.log(scrollPosition)
+  if (scrollPosition > 2000) {
+    // code pour ajouter une classe à une div
+    document.getElementById('animate1').classList.add('strengths2');
+    document.getElementById('animate2').classList.add('strengths3');
+    document.getElementById('animate3').classList.add('strengths4-5');
+  } 
+});
+

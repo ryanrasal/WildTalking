@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />    
-   <!-- Font awsome CDN link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Font awsome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
 
     <title>Star Rating in HTML CSS & Javascript</title>
@@ -22,17 +24,17 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Témoignages</a></li>
             <li class="hiddenMobile"><a href="#"> Où ?</a> </li>
-            <li><a href="#">Contact</a> </li> 
+            <li><a href="#">Contact</a> </li>
         </ul>
     </nav>
     <div class="backgroundDiv">
-    <div class="background"></div>
-    <div class="backgroundText">
-        <h1>Wild Talking</h1>
-        <p>Les apprentis d'hier,<br> les leaders de demain.</p>
+        <div class="background"></div>
+        <div class="backgroundText">
+            <h1>Wild Talking</h1>
+            <p>Les apprentis d'hier,<br> les leaders de demain.</p>
+        </div>
     </div>
-    </div>
-    
+
 
     <h2>Développez votre potentiel !</h2>
     <div class="concept">
@@ -47,23 +49,27 @@
         <p>Construire son message,<br>
             Tester son impact,<br>
             Feedbacks constructifs des participants et du coach.
-            </p>
+        </p>
     </div>
     <hr>
     <div class="strengths">
-    <div class="strengths2">
-        <p>Confiance en soi</p>
+        <div id="animate1">
+            <p>Confiance en soi</p>
+        </div>
+       
+        <div id="animate2">
+            <p>Aisance</p>
+        
+        </div>
+        <div class="containerAnimate2">
+        <div id="animate3">
+            <p class="pAnimate">Gestion du stress</p>
+            <p>Posture</p>
+        </div>
+        </div>
     </div>
-    <div class="strengths4-5">
-        <p>Aisance</p>
-    <p class="strengths5">Posture</p>
-</div>
-    <div class="strengths3">
-        <p>Gestion du stress</p>
-    </div>
-</div>
 
-<!-- Star rating + Comments -->
+    <!-- Star rating + Comments -->
 
 <div class="rating-box">
     <header>Partage nous ton avis</header>
@@ -130,9 +136,42 @@
     <div class="map-title">
         <p>Ou sommes nous?</p>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.967201933927!2d4.8271744!3d45.7462982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Training%20Developer%20Web%2C%20Data%20Analyst!5e0!3m2!1sro!2sfr!4v1678360557523!5m2!1sro!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- </div>
- 
+
+    <!----------- CONTACT ------------->
+
+    <h2 class="reservation" id="contactform">Réservez votre <br> Séance</h2>
+    <section class="formulaire">
+        <form action="submit" class="form" id="formulaire">
+            <div class="div-input">
+                <input type="text" id="name" name="user_name" class="input-form" placeholder="Name">
+            </div>
+            <div>
+                <input type="email" id="mail" name="user_mail" class="input-form" placeholder="Email">
+            </div>
+            <div>
+                <input id="msg" name="user_message" class="input-message" placeholder="Message">
+            </div>
+            <div>
+                <label for="date">Sélectionnez une date :</label>
+                <input type="date" id="date" name="date">
+                <div id="result" class="resultDateForm"></div>
+
+            </div>
+            <input type="submit" value="Envoyer" class="envoyez">
+            <p id="erreur" style="color: red"></p>
+        </form>
+    </section>
+
+    <!-- Map -->
+    <div class="map">
+        <div class="map-title">
+            <p>Ou sommes nous?</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.967201933927!2d4.8271744!3d45.7462982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Training%20Developer%20Web%2C%20Data%20Analyst!5e0!3m2!1sro!2sfr!4v1678360557523!5m2!1sro!2sfr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
 </body>
 
 </html>
