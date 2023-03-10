@@ -379,15 +379,9 @@ iframe {
         background-repeat: no-repeat;
         background-position: center;
     }
-    iframe{
-        width: 95%;
-       height: 50%;
-}
 
-.rating-box{
-    width: 50%;
-    height: 50%;
-}
+    .backgroundText h1 {
+        opacity: 0;
     }
 
     .backgroundText p {
@@ -450,20 +444,6 @@ iframe {
 
     }
 
-    .map-title{
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color:grey;
-    }
-
-    .currentRating{
-        text-align: center;
-        margin-top: 15px;
-    }
-
- 
     .pAnimate {
         padding-right: 300px;
     }
@@ -531,5 +511,14 @@ iframe {
             top: 345%;
         }
     }
+}
+
+
+
+
+
+
+
+
 
 
