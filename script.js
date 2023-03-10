@@ -98,22 +98,16 @@ document.getElementById('formulaire').addEventListener('submit', (e) => {
 }
 });
 
-const animateElements = document.querySelectorAll('.animate');
 
-const animateElement = (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    } else {
-      entry.target.classList.remove('visible');
-    }
-  });
-}
-
-const observer = new IntersectionObserver(animateElement, {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.2
+window.addEventListener('scroll', function() {
+  // code pour récupérer la position de défilement (scroll) de l'utilisateur
+  let scrollPosition = window.scrollY;
+  console.log(scrollPosition)
+  if (scrollPosition > 2000) {
+    // code pour ajouter une classe à une div
+    document.getElementById('animate1').classList.add('strengths2');
+    document.getElementById('animate2').classList.add('strengths3');
+    document.getElementById('animate3').classList.add('strengths4-5');
+  } 
 });
 
-animateElements.forEach((el) => observer.observe(el));
