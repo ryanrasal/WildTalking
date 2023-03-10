@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
+
 /* body{
     height: 100vh;
     display:flex;
@@ -69,15 +71,15 @@ h1 {
 }
 
 .background {
-  background-image: url("./Assets/conference.jpg");
-  filter: blur(2px);
-  height: 17vh;
-  background-size: 100%;
-  padding: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+    background-image: url("./Assets/conference.jpg");
+    filter: blur(2px);
+    height: 17vh;
+    background-size: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .backgroundText {
@@ -193,66 +195,69 @@ hr {
 /* Star rating + comments */
 
 .rating-box {
-  position: relative;
-  background: #fff;
-  padding: 25px 25px 35px;
-  border-radius: 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    background: #fff;
+    padding: 25px 25px 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .rating-box header {
-  font-size: 22px;
-  color: #dadada;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-align: center;
+    font-size: 22px;
+    color: #dadada;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .rating-box .stars {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
+
 .stars i {
-  color: #e6e6e6;
-  font-size: 35px;
-  cursor: pointer;
+    color: #e6e6e6;
+    font-size: 35px;
+    cursor: pointer
 }
 
 .stars i.active {
-  color: #ff9c1a;
+    color: #ff9c1a;
 }
+
 #form-textarea {
-  margin-top: 40px;
-  height: 100px;
-  width: 100%;
-  border-radius: 7.5px;
-  border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 7px;
-  font-size: 15px;
+    margin-top: 40px;
+    height: 100px;
+    width: 100%;
+    border-radius: 7.5px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 7px;
+    font-size: 15px;
 }
 
 .submitButton {
-  margin-top: 20px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
 }
+
 #submitButton {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #9dc2ed;
-  font-size: 16px;
-  color: #676b73;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #9DC2ED;
+    font-size: 16px;
+    color: #676B73;
 }
 
 .comments-area {
-  margin-top: 20px;
-  background-color: green;
-  padding: 15px;
-  border-radius: 5px;
+    margin-top: 20px;
+    background-color: green;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 /******************** CONTACT  *********************/
@@ -300,6 +305,29 @@ hr {
 
 textarea {
   padding: 15px 15px;
+}
+
+/* MAP */
+.map {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+iframe {
+    width: 95%;
+    height: 100%;
+}
+
+.map-title {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: grey;
 }
 
 @media screen and (min-width: 1200px) {
@@ -450,41 +478,100 @@ textarea {
     animation-name: apparition2;
   }
 
-  .strengths5 {
-    font-size: 3rem;
-    padding-left: 700px;
-  }
+    .strengths2 {
+        font-size: 3rem;
+        padding-left: 300px;
+        padding-top: 260px;
+        position: absolute;
+        top: 100%;
+        transform-origin: center bottom;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-name: apparition;
+    }
 
-  .strengths3 {
-    font-size: 3rem;
-    padding-top: 150px;
-    padding-left: 500px;
-    position: absolute;
-    top: 100%;
-    transform-origin: center bottom;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-    animation-name: apparition3;
-  }
+    .containerAnimate2 {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .pAnimate {
+        padding-right: 300px;
+    }
+
+    .strengths4-5 {
+        font-size: 3rem;
+        padding-top: 150px;
+        padding-left: 150px;
+        position: absolute;
+        top: 100%;
+        transform-origin: center bottom;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-name: apparition2;
+    }
+
+
+    .strengths5 {
+        font-size: 3rem;
+        padding-left: 700px;
+    }
+
+    .strengths3 {
+        font-size: 3rem;
+        padding-top: 150px;
+        padding-left: 500px;
+        position: absolute;
+        transform-origin: center bottom;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-name: apparition3;
+    }
+
+
+    @keyframes apparition {
+        0% {
+            top: 100%;
+            left: 100%;
+        }
+
+        100% {
+            top: 380%;
+            left: 15%;
+        }
+    }
+
+    @keyframes apparition2 {
+        0% {
+            top: 100%;
+            left: 100%;
+        }
+
+        100% {
+            top: 370%;
+        }
+    }
+
+    @keyframes apparition3 {
+        0% {
+            top: 100%;
+            left: 100%;
+        }
+
+        100% {
+            top: 345%;
+        }
+    }
 }
 
-/* MAP */
-.map {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-iframe {
-  width: 95%;
-  height: 100%;
-}
 
-.map-title {
-  font-size: 2em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: grey;
-}
+
+
+
+
+
+
+
+
