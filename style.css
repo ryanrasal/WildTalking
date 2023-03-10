@@ -343,6 +343,15 @@ cursor:pointer
         background-repeat: no-repeat;
         background-position: center;
     }
+    iframe{
+        width: 95%;
+       height: 50%;
+}
+
+.rating-box{
+    width: 50%;
+    height: 50%;
+}
     }
 
 
@@ -367,3 +376,10 @@ cursor:pointer
     margin-bottom: 8px;
     color:grey;
     }
+
+    .currentRating{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+ 
