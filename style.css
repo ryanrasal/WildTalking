@@ -49,6 +49,7 @@ nav ul li a {
   text-decoration: none;
   color: white;
 }
+
 .btn {
   display: none;
 }
@@ -119,8 +120,7 @@ h2 {
 
 .concept {
   display: flex;
-  height: 125px;
-  padding: 10px;
+  height: 100%;
 }
 
 .concept p {
@@ -172,36 +172,6 @@ hr {
   background-repeat: no-repeat;
 }
 
-.strengths1 {
-  color: white;
-  display: flex;
-  justify-content: baseline;
-  padding-top: 30px;
-}
-
-.strengths2 {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-}
-
-.strengths4-5 {
-  color: white;
-  text-align: center;
-  display: flex;
-}
-
-.strengths5 {
-  padding-left: 100px;
-}
-
-.strengths3 {
-  color: white;
-  display: flex;
-  padding: 30px 0 30px 70px;
-}
-
 .imgDetails {
   width: 100%;
 }
@@ -220,10 +190,10 @@ hr {
   padding: 25px 25px 35px;
   border-radius: 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  width:95%;
-  margin:auto;
-  margin-top:20px;
- 
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+
 }
 
 .rating-box header {
@@ -235,46 +205,46 @@ hr {
 }
 
 .rating-box .stars {
-display: flex;
-align-items: center;
-gap: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .stars i {
-color: #e6e6e6;
-font-size: 35px;
-cursor: pointer;
+  color: #e6e6e6;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .stars i.active {
-color: #ff9c1a;
+  color: #ff9c1a;
 }
 
 #form-textarea {
-margin-top: 40px;
-height: 100px;
-width: 100%;
-border-radius: 7.5px;
-border: none;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-padding: 7px;
-font-size: 15px;
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+  border-radius: 7.5px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 7px;
+  font-size: 15px;
 }
 
 .submitButton {
-margin-top: 20px;
-border-radius: 20px;
-display: flex;
-justify-content: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 #submitButton {
-padding: 10px;
-border-radius: 5px;
-border: none;
-background-color: #9dc2ed;
-font-size: 16px;
-color: #676b73;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #9dc2ed;
+  font-size: 16px;
+  color: #676b73;
 }
 
 .comments-area {
@@ -285,25 +255,26 @@ color: #676b73;
 }
 
 
-.currentRating{
+.currentRating {
   margin-top: 20px;
   text-align: center;
   font-size: 22px;
   color: #676B73;
 }
-.comment-value{
-  color:#676B73;
+
+.comment-value {
+  color: #676B73;
 }
 
-#message-error{
-  color:#F7334B;
+#message-error {
+  color: #F7334B;
   text-align: center;
   margin-top: 20px;
 }
 
 /******************** Tarifs  *********************/
-.tarifs{
-  margin:50px;
+.tarifs {
+  margin: 50px;
   font-size: 1rem;
   line-height: 20px;
   border-radius: 10px;
@@ -336,6 +307,7 @@ color: #676b73;
   padding: 15px;
   border-radius: 10px;
 }
+
 .labelAndInputDate {
   display: flex;
   flex-direction: column;
@@ -399,6 +371,7 @@ iframe {
     align-items: center;
     font-size: 25px;
   }
+
   button .btn {
     outline: none;
     background-color: transparent;
@@ -439,20 +412,20 @@ iframe {
     cursor: pointer;
   }
 
-/******************** Star-rating  *********************/
-.rating-box{
-  width: 35%;
-}
+  /******************** Star-rating  *********************/
+  .rating-box {
+    width: 35%;
+  }
 
-/******************** Tarifs  *********************/
-.tarifs{
-  margin:50px;
-  font-size: 1.2rem;
-  line-height: 20px;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+  /******************** Tarifs  *********************/
+  .tarifs {
+    margin: 50px;
+    font-size: 1.2rem;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 
   /******************** FORMUAIRE MODALE  *********************/
 
@@ -468,6 +441,7 @@ iframe {
     color: white;
     width: 50%;
   }
+
   .croix {
     height: 50px;
     background-color: white;
@@ -476,9 +450,11 @@ iframe {
     border-radius: 10px;
     cursor: pointer;
   }
+
   .form {
     padding: 20px;
   }
+
   .inputFormModale {
     width: 80%;
     margin: 0 auto;
@@ -486,6 +462,7 @@ iframe {
     padding: 15px;
     border-radius: 10px;
   }
+
   .inputFormModaleText {
     width: 80%;
     margin: 0 auto;
@@ -493,9 +470,11 @@ iframe {
     padding: 35px 15px 20px 15px;
     border-radius: 10px;
   }
+
   .titleFormModale {
     color: black;
   }
+
   .buttonFormModale {
     background-color: black;
     color: white;
@@ -508,6 +487,7 @@ iframe {
     margin-top: 20px;
     cursor: pointer;
   }
+
   .buttonFormModale:hover {
     background-color: rgb(45, 45, 45);
   }
@@ -535,14 +515,20 @@ iframe {
     padding: 20% 25% 10% 25%;
   }
 
+  .concept {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .concept p {
     font-size: 1.2rem;
     padding-left: 5%;
+    line-height: 2.3rem;
   }
 
   .concept img {
-    height: 300px;
-    width: 500px;
+    height: 90%;
+    width: 35%;
     border-radius: 10px;
   }
 
@@ -550,29 +536,39 @@ iframe {
     margin: 100px;
   }
 
+.conceptIdea {
+  display: flex;
+  justify-content: space-around;
+}
+
   .conceptIdea img {
     height: 90%;
     width: 40%;
     border-radius: 10px;
+    margin-left: 10%;
   }
 
   .conceptIdea p {
     font-size: 1.2rem;
-    padding-left: 20%;
+    line-height: 2.3rem;
+    width: 60%;
+    padding: 0 5%;
   }
 
   .strengths {
     height: 880px;
     width: 100%;
   }
+
   .strengths4-5 {
+    display: flex;
     font-size: 3rem;
     padding-top: 150px;
     padding-left: 150px;
     position: absolute;
     top: 100%;
     transform-origin: center bottom;
-    animation-duration: 8s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-name: apparition2;
   }
@@ -622,8 +618,7 @@ iframe {
     }
 
     100% {
-      top: 380%;
-      left: 15%;
+      top: 320%;
     }
   }
 
@@ -634,7 +629,7 @@ iframe {
     }
 
     100% {
-      top: 450%;
+      top: 365%;
     }
   }
 
@@ -645,8 +640,24 @@ iframe {
     }
 
     100% {
-      top: 340%;
+      top: 390%;
     }
+  }
+
+  .detailsInspiration {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgDetails {
+    height: 90%;
+    width: 40%;
+    border-radius: 10px;
+  }
+
+  .details {
+    width: 50%;
+    padding: 20px;
   }
 
   .inspiration {
@@ -654,19 +665,22 @@ iframe {
   }
 
 
-   /******************** Formulaire And Map  *********************/
+  /******************** Formulaire And Map  *********************/
 
   .containerContactAndMap {
     display: flex;
     justify-content: space-around;
   }
+
   .formulaire {
     width: 40%;
   }
+
   .containerTitleForm {
     display: flex;
     justify-content: center;
   }
+
   .input-form {
     width: 40%;
   }
@@ -674,11 +688,13 @@ iframe {
   .envoyez {
     width: 40%;
   }
+
   .map {
     padding-top: 40px;
     padding-right: 250px;
     height: 900px;
   }
+
   iframe {
     width: 140%;
   }
