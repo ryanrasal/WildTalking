@@ -7,16 +7,16 @@ let curentRating = document.querySelector('.currentRating')
 let curentStarLevel = 0;
 stars.forEach((star, index1) => {
   // Add an event listener that runs when the click "event" is triggered 
- 
+
   star.addEventListener('click', () => {
-   
+
 
     curentStarLevel = index1 + 1;
     curentRating.innerText = `${curentStarLevel}`;
 
     // Loop through the "stars" NodeList Again
     stars.forEach((star, index2) => {
-     
+
       //   Add the "active" class to the clicked star and any stars with a lower index 
       // and remove the "active" class form any stars with a higher index
       index1 >= index2
@@ -144,7 +144,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('animate1').classList.remove('strengths2');
     document.getElementById('animate2').classList.remove('strengths3');
     document.getElementById('animate3').classList.remove('strengths4-5');
-  }});
+  }
+});
 /////////////// FORMULAIRE DE CONTACT Modale ////////////////////
 
 const bulleContact = document.getElementById("bulleDialogue");
