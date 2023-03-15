@@ -145,7 +145,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('animate1').classList.remove('strengths2');
     document.getElementById('animate2').classList.remove('strengths3');
     document.getElementById('animate3').classList.remove('strengths4-5');
-  }});
+  }
+});
 /////////////// FORMULAIRE DE CONTACT Modale ////////////////////
 
 const bulleContact = document.getElementById("bulleDialogue");
