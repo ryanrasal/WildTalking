@@ -81,29 +81,36 @@
         <i class="fa-solid fa-star"></i>
     </div>
     <div class="currentRating">0 sur 5</div>
+    
     <div class='form-area' id='form-area'>
         <form method="post" action="">
             <p>
                 <input id="form-textarea" type="text" name="form-textarea">
             </p>
         </form>
+        <div class="submitButton">
+            <button type="submit" id="submitButton">Soumettre</button>
+        </div>
     </div>
-    <div class="submitButton">
-        <button type="submit" id="submitButton">Soumettre</button>
-    </div>
+    
     <!-- <div class="comments-area" id="comments-area">
         <div class="comments-card">
-            <p> Mon commentaire blabla </p>  
+            <p class="comment-value"> Mon commentaire blabla </p>  
         </div>       
 </div> -->
-
-
 
 <div>
     <p id="message-error"></p>
 </div>
 </div>
 
+ <!-- Tarifs -->
+<div class="tarifs">
+    <p>Nos sessions se tienent tous les deux semaines à partir de 18h, le premier et le troisième mardi du mois et durent 2h.</p>
+    <p>Viens participer à nos réunions en tant qu'invité juqs'à trois fois gratuitement.</p>
+    <p>Si tu es convaincu par l'expérience passée ensemble, tu pourras ensuite t'inscrire en tant que membre et participer aux ateliers, en prenant différents rôles qui te permettront développer tes compétences de prise de parole en public.</p>
+</div>
+ 
  <!----------- CONTACT ------------->
 
  <h2 class="reservation" id="contactform">Réservez votre <br> Séance</h2>
@@ -115,10 +122,10 @@
          <div>
              <input type="email" id="mail" name="user_mail" class="input-form" placeholder="Email">
          </div>
-         <div>
+         <div class="message-box">
              <input id="msg" name="user_message" class="input-message" placeholder="Message">
          </div>
-         <div>
+         <div class="date-input">
             <label for="date">Sélectionnez une date :</label>
             <input type="date" id="date" name="date">
             <div id="result" class="resultDateForm"></div>

@@ -203,11 +203,15 @@ hr {
     padding: 25px 25px 35px;
     border-radius: 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    width:95%;
+    margin:auto;
+    margin-top:20px;
+   
 }
 
 .rating-box header {
     font-size: 22px;
-    color: #dadada;
+    color: #676B73;
     font-weight: 500;
     margin-bottom: 20px;
     text-align: center;
@@ -258,11 +262,27 @@ hr {
 
 .comments-area {
     margin-top: 20px;
-    background-color: green;
+    background-color: #DAEBFE;
     padding: 15px;
     border-radius: 5px;
 }
 
+
+.currentRating{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #676B73;
+}
+.comment-value{
+    color:#676B73;
+}
+
+#message-error{
+    color:#F7334B;
+    text-align: center;
+    margin-top: 20px;
+}
 
 /******************** CONTACT  *********************/
 .formulaire {
@@ -272,7 +292,7 @@ hr {
 .form {
     background-color: white;
     text-align: center;
-    height: 500px;
+    height: 430px;
     border-radius: 10px;
     margin: 0 20px 50px 20px;
 }
@@ -325,6 +345,13 @@ textarea {
     padding: 15px 15px;
 }
 
+.message-box{
+    margin-bottom: 20px;
+}
+
+.date-input{
+    font-size: 15px;
+}
 /* MAP */
 .map {
     margin-bottom: 50px;
@@ -477,7 +504,24 @@ iframe {
         animation-name: apparition3;
     }
 
+    .rating-box{
+        width: 35%;
+    }
 
+    .map{
+        width: 45%;
+        margin: auto;
+    }
+
+    .tarifs{
+        margin:50px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        background-color: ;
+        padding: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
     @keyframes apparition {
         0% {
             top: 100%;
@@ -511,7 +555,7 @@ iframe {
             top: 345%;
         }
     }
-}
+
 
 
 

@@ -2,22 +2,21 @@
 // Select all the elements with the "i" tag and store them in a NodeList called "stars"
 const stars = document.querySelectorAll('.stars i')
 // Loop trough the "stars" NodeList
-// console.log(stars)
+
 let curentRating=document.querySelector('.currentRating')
 let curentStarLevel=0;
 stars.forEach((star,index1) => {
   // Add an event listener that runs when the click "event" is triggered 
-  // console.log(index1)
+ 
   star.addEventListener('click',() =>{
-    // console.log('clicked')
-    // console.log(index1)
-    
+    console.log('clicked')
+   
     curentStarLevel=index1+1;
-    curentRating.innerText=`${curentStarLevel}`;
+    curentRating.innerText=`${curentStarLevel} sur 5`;
 
     // Loop through the "stars" NodeList Again
     stars.forEach((star,index2) => {
-      // console.log(index2)
+      
       //   Add the "active" class to the clicked star and any stars with a lower index 
       // and remove the "active" class form any stars with a higher index
       index1 >= index2 ? star.classList.add('active') : star.classList.remove('active')
@@ -34,9 +33,8 @@ submitButton.addEventListener('click', () => {
   let inputForm = document.getElementById('form-textarea').value;
   let messageError=document.getElementById('message-error');
   let starLevel=curentRating;
-  // console.log(inputForm)
-  console.log(starLevel);
-  if(inputForm ===''&&curentStarLevel===0){
+  
+   if(inputForm ===''){
     return messageError.innerHTML = 'Le champ doit être rempli'
   } else {
     messageError.innerHTML='';
@@ -44,13 +42,15 @@ submitButton.addEventListener('click', () => {
   // 2 create elements
   let commentArea=document.createElement('div');
   let commentValue=document.createElement('p');
-  commentValue.innerHTML=`&#11088 ${curentStarLevel}/5 <br> ${inputForm}`;
-  console.log(curentRating)
+  commentValue.innerHTML=`&#11088  ${curentStarLevel} / 5 <br> ${inputForm}`;
+  
   // let curentRating=document.createElement('div')
   // curentRating.innerText=`${curentRating}`;
   
   // 3 add a class
   commentArea.classList.add('comments-area');
+  commentValue.classList.add('comment-value');
+  // inputForm.classList.add('comment-value');
   
 
   // 4 specify the dependency of the sections
