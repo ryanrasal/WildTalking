@@ -1,106 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* body{
-    height: 100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background: #9DC2ED;
-} */
+.nuit {
+  background-color: #32353a;
+  color: white;
+}
 
-/* NAVBAR  */
+/******************** NAVBAR  *********************/
 nav {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    color: white;
-    height: 40px;
-    width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 100%;
 }
 
 .nav-opacity {
-    opacity: 0.33;
+  opacity: 0.33;
 }
 
 .hiddenMobile {
-    display: none;
+  display: none;
 }
 
 nav ul {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
 }
 
 nav ul li {
-    font-size: 18px;
-    margin: 10px;
-    list-style-type: none;
+  font-size: 18px;
+  margin: 10px;
+  list-style-type: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+}
+.btn {
+  display: none;
 }
 
-/* Header */
+/******************** DIALOGUE  *********************/
+
+.dialogue {
+  display: none;
+}
+
+.containerFormContact {
+  display: none;
+}
+
+/******************** HEADER  *********************/
 
 body {
-    background-color: #FAFCFF;
+  background-color: #fafcff;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    text-shadow: black 1px 1px 2px;
-    padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-shadow: black 1px 1px 2px;
+  padding: 5px;
 }
 
 .backgroundDiv {
-    position: relative;
+  position: relative;
 }
 
 .background {
-    background-image: url("./Assets/conference.jpg");
-    filter: blur(2px);
-    height: 17vh;
-    background-size: 100%;
-    padding: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  background-image: url("./Assets/conference.jpg");
+  filter: blur(2px);
+  height: 17vh;
+  background-size: 100%;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .backgroundText {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    position: relative;
-    z-index: 10;
-    text-shadow: black 1px 1px 2px;
-    position: relative;
-    padding: 10px;
-
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  position: relative;
+  z-index: 10;
+  text-shadow: black 1px 1px 2px;
+  position: relative;
+  padding: 10px;
 }
 
 .backgroundText h1 {
-    text-align: end;
+  text-align: end;
 }
 
 .backgroundText p {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .title {
@@ -111,25 +119,24 @@ h1 {
 }
 
 .concept {
-    display: flex;
-    height: 125px;
-    padding: 10px;
+  display: flex;
+  height: 125px;
+  padding: 10px;
 }
 
-
 .concept p {
-    width: 50%;
-    font-size: 0.7rem;
-    line-height: 1.8;
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px;
+  width: 50%;
+  font-size: 0.7rem;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
 }
 
 .concept img {
-    height: 120%;
-    width: 50%;
-    padding: 5px;
-    border-radius: 10px;
+  height: 120%;
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 hr {
@@ -137,24 +144,24 @@ hr {
 }
 
 .conceptIdea {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 
 .conceptIdea img {
-    height: 120%;
-    width: 50%;
-    padding: 5px;
-    border-radius: 10px;
+  height: 120%;
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .conceptIdea p {
-    width: 50%;
-    font-size: 0.7rem;
-    line-height: 1.8;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 10px;
-    padding-top: 5px;
+  width: 50%;
+  font-size: 0.7rem;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 .strengths {
@@ -168,10 +175,10 @@ hr {
 }
 
 .strengths1 {
-    color: white;
-    display: flex;
-    justify-content: baseline;
-    padding-top: 30px;
+  color: white;
+  display: flex;
+  justify-content: baseline;
+  padding-top: 30px;
 }
 
 .strengths2 {
@@ -188,7 +195,7 @@ hr {
 }
 
 .strengths5 {
-    padding-left: 100px;
+  padding-left: 100px;
 }
 
 .strengths3 {
@@ -217,117 +224,239 @@ h2 {
 /* Star rating + comments */
 
 .rating-box {
-    position: relative;
-    background: #fff;
-    padding: 25px 25px 35px;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  background: #fff;
+  padding: 25px 25px 35px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .rating-box header {
-    font-size: 22px;
-    color: #dadada;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 22px;
+  color: #dadada;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .rating-box .stars {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .stars i {
-    color: #e6e6e6;
-    font-size: 35px;
-    cursor: pointer
+  color: #e6e6e6;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .stars i.active {
-    color: #ff9c1a;
+  color: #ff9c1a;
 }
 
 #form-textarea {
-    margin-top: 40px;
-    height: 100px;
-    width: 100%;
-    border-radius: 7.5px;
-    border: none;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 7px;
-    font-size: 15px;
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+  border-radius: 7.5px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 7px;
+  font-size: 15px;
 }
 
 .submitButton {
-    margin-top: 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 #submitButton {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #9DC2ED;
-    font-size: 16px;
-    color: #676B73;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #9dc2ed;
+  font-size: 16px;
+  color: #676b73;
 }
 
 .comments-area {
-    margin-top: 20px;
-    background-color: green;
-    padding: 15px;
-    border-radius: 5px;
+  margin-top: 20px;
+  background-color: green;
+  padding: 15px;
+  border-radius: 5px;
 }
-
 
 /******************** CONTACT  *********************/
 .formulaire {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .form {
-    background-color: white;
-    text-align: center;
-    height: 500px;
-    border-radius: 10px;
-    margin: 0 20px 50px 20px;
+  background-color: white;
+  text-align: center;
+  height: 500px;
+  border-radius: 10px;
+  margin: 0 20px 50px 20px;
 }
 
 .div-input {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 .input-form {
-    width: 75%;
-    margin-bottom: 30px;
-    padding: 15px;
-    border-radius: 10px;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 10px;
 }
-
-.input-message {
-    width: 85%;
-    padding-bottom: 100px;
-    border-radius: 10px;
-}
-
-.reservation {
-    position: relative;
-    display: inline-block;
-    top: 43px;
-    left: 45px;
-    font-size: 2em;
+.labelAndInputDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .resultDateForm {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .envoyez {
+  background-color: black;
+  color: white;
+  width: 75%;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 15px 15px;
+}
+
+/* MAP */
+.map {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+iframe {
+  width: 95%;
+  height: 100%;
+}
+
+.map-title {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  /******************** NAVBAR  *********************/
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    height: 70px;
+    align-items: center;
+    font-size: 25px;
+  }
+  button .btn {
+    outline: none;
+    background-color: transparent;
+    color: #cbd2d9;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 35px;
+  }
+
+  .hiddenMobile {
+    display: block;
+  }
+
+  nav p {
+    padding-left: 15px;
+  }
+
+  nav ul li {
+    font-size: 25px;
+  }
+
+  nav ul li:hover {
+    text-decoration: underline;
+  }
+
+  /******************** BULL DE DIALOGIUE  *********************/
+
+  .dialogue {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  /******************** FORMUAIRE MODALE  *********************/
+
+  .formulaireModale {
+    position: sticky;
+    left: 20%;
+    top: 15%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    z-index: 50;
+    background-color: black;
+    color: white;
+    width: 50%;
+  }
+  .croix {
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .form {
+    padding: 20px;
+  }
+  .inputFormModale {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .inputFormModaleText {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 35px 15px 20px 15px;
+    border-radius: 10px;
+  }
+  .titleFormModale {
+    color: black;
+  }
+  .buttonFormModale {
     background-color: black;
     color: white;
     width: 75%;
@@ -338,208 +467,236 @@ h2 {
     border-radius: 10px;
     margin-top: 20px;
     cursor: pointer;
-}
+  }
+  .buttonFormModale:hover {
+    background-color: rgb(45, 45, 45);
+  }
 
-textarea {
-    padding: 15px 15px;
-}
+  /******************** HEADER  *********************/
 
-/* MAP */
-.map {
-    margin-bottom: 50px;
+  .background {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .containerContactAndMap {
+    display: flex;
+    justify-content: space-around;
+  }
+  .formulaire {
+    width: 40%;
+  }
+  .containerTitleForm {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  }
+  .input-form {
+    width: 40%;
+  }
 
-}
-
-iframe {
-    width: 95%;
-    height: 100%;
-}
-
-.map-title {
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: grey;
-}
-
-@media screen and (min-width: 1200px) {
-    nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        height: 70px;
-        align-items: center;
-        font-size: 25px;
+  .envoyez {
+    width: 40%;
+  }
+  .map {
+    padding-top: 40px;
+    padding-right: 250px;
+    height: 900px;
+  }
+  iframe {
+    width: 140%;
+  }
+  @keyframes apparition {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    .hiddenMobile {
-        display: block;
+    100% {
+      top: 380%;
+      left: 15%;
+    }
+  }
+
+  @keyframes apparition2 {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    nav p {
-        padding-left: 15px;
+    100% {
+      top: 370%;
+    }
+  }
+
+  @keyframes apparition3 {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    nav ul li {
-        font-size: 25px;
+    100% {
+      top: 345%;
+    }
+  }
+  .animate {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+
+  .animate.visible {
+    opacity: 1;
+  }
+  .backgroundText h1 {
+    opacity: 0;
+  }
+
+  .backgroundText p {
+    padding-top: 200px;
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    padding: 25% 25% 10% 25%;
+  }
+
+  .concept p {
+    font-size: 1.2rem;
+    padding-left: 5%;
+  }
+
+  .concept img {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+  }
+
+  hr {
+    margin: 250px 100px;
+  }
+
+  .conceptIdea img {
+    height: 90%;
+    width: 40%;
+    border-radius: 10px;
+  }
+
+  .conceptIdea p {
+    font-size: 1.2rem;
+    padding-left: 20%;
+  }
+
+  .strengths {
+    height: 880px;
+    width: 100%;
+  }
+
+  .strengths2 {
+    font-size: 3rem;
+    padding-left: 300px;
+    padding-top: 300px;
+    position: absolute;
+    top: 100%;
+    transform-origin: center bottom;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-name: apparition;
+  }
+
+  .strengths4-5 {
+    font-size: 3rem;
+    padding-top: 150px;
+    padding-left: 150px;
+    position: absolute;
+    top: 100%;
+    transform-origin: center bottom;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-name: apparition2;
+  }
+
+  .strengths2 {
+    font-size: 3rem;
+    padding-left: 300px;
+    padding-top: 260px;
+    position: absolute;
+    top: 100%;
+    transform-origin: center bottom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: apparition;
+  }
+
+  .containerAnimate2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pAnimate {
+    padding-right: 300px;
+  }
+
+  .strengths4-5 {
+    font-size: 3rem;
+    padding-top: 150px;
+    padding-left: 150px;
+    position: absolute;
+    top: 100%;
+    transform-origin: center bottom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: apparition2;
+  }
+
+  .strengths5 {
+    font-size: 3rem;
+    padding-left: 700px;
+  }
+
+  .strengths3 {
+    font-size: 3rem;
+    padding-top: 150px;
+    padding-left: 500px;
+    position: absolute;
+    transform-origin: center bottom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: apparition3;
+  }
+
+  @keyframes apparition {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    nav ul li:hover {
-        text-decoration: underline;
+    100% {
+      top: 380%;
+      left: 15%;
+    }
+  }
+
+  @keyframes apparition2 {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    .background {
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    100% {
+      top: 370%;
+    }
+  }
+
+  @keyframes apparition3 {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    .backgroundText h1 {
-        opacity: 0;
+    100% {
+      top: 345%;
     }
-
-    .backgroundText p {
-        padding-top: 200px;
-        font-size: 5rem;
-    }
-
-    .title {
-        font-size: 3rem;
-        padding: 25% 25% 10% 25%;
-    }
-
-    .concept p {
-        font-size: 1.2rem;
-        padding-left: 5%;
-    }
-
-    .concept img {
-        height: 300px;
-        width: 500px;
-        border-radius: 10px;
-    }
-
-    hr {
-        margin: 250px 100px;
-    }
-
-    .conceptIdea img {
-        height: 90%;
-        width: 40%;
-        border-radius: 10px;
-    }
-
-    .conceptIdea p {
-        font-size: 1.2rem;
-        padding-left: 20%;
-    }
-
-    .strengths {
-        height: 880px;
-        width: 100%;
-    }
-
-    .strengths2 {
-        font-size: 3rem;
-        padding-left: 300px;
-        padding-top: 260px;
-        position: absolute;
-        top: 100%;
-        transform-origin: center bottom;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-name: apparition;
-    }
-
-    .containerAnimate2 {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .pAnimate {
-        padding-right: 300px;
-    }
-
-    .strengths4-5 {
-        font-size: 3rem;
-        padding-top: 150px;
-        padding-left: 150px;
-        position: absolute;
-        top: 100%;
-        transform-origin: center bottom;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        animation-name: apparition2;
-    }
-
-
-    .strengths5 {
-        font-size: 3rem;
-        padding-left: 700px;
-    }
-
-    .strengths3 {
-        font-size: 3rem;
-        padding-top: 150px;
-        padding-left: 500px;
-        position: absolute;
-        transform-origin: center bottom;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-name: apparition3;
-    }
-
-
-    @keyframes apparition {
-        0% {
-            top: 100%;
-            left: 100%;
-        }
-
-        100% {
-            top: 2900px;
-            left: 5%;
-        }
-    }
-
-    @keyframes apparition2 {
-        0% {
-            top: 100%;
-            left: 100%;
-        }
-
-        100% {
-            top: 3200px;
-        }
-    }
-
-    @keyframes apparition3 {
-        0% {
-            top: 100%;
-            left: 100%;
-        }
-
-        100% {
-            top: 3400px;
-        }
-    }
-
-    .details {
-        font-size: 1.2rem;
-        padding-left: 20%;
-        padding-top: 5%;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
+  }
 }
