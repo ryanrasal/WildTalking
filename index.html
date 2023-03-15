@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
 
-    <title>Star Rating in HTML CSS & Javascript</title>
+    <title>WildTalking</title>
 </head>
 
 <body>
@@ -23,8 +23,7 @@
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Témoignages</a></li>
-            <li class="hiddenMobile"><a href="#"> Où ?</a> </li>
-            <li><a href="#">Contact</a> </li>
+            <li><a href="#">Réservation</a> </li>
         </ul>
     </nav>
     <div class="backgroundDiv">
@@ -36,7 +35,7 @@
     </div>
 
 
-    <h2>Développez votre potentiel !</h2>
+    <h2 class="title">Développez votre potentiel !</h2>
     <div class="concept">
         <p>Comprendre les ressorts de l’impact d’une prise de parole<br>
             Les fondamentaux de la communication.<br>
@@ -52,46 +51,57 @@
         </p>
     </div>
     <hr>
-    <div class="strengths">
+    <div class="strengths" id="strengths">
         <div id="animate1">
             <p>Confiance en soi</p>
         </div>
-       
+
         <div id="animate2">
             <p>Aisance</p>
-        
+
         </div>
         <div class="containerAnimate2">
-        <div id="animate3">
-            <p class="pAnimate">Gestion du stress</p>
-            <p>Posture</p>
-        </div>
+            <div id="animate3">
+                <p class="pAnimate">Posture</p>
+                <p>Gestion du stress</p>
+            </div>
         </div>
     </div>
+    <hr>
+    <img class="imgDetails" src="./Assets/groupspeaking.jpg">
+    <p class="details">Capter l’attention grâce à son storytelling,
+        comprendre ce qu’est le Storytelling, passer des faits à la narration.<br>
+        <br>
+        Gérer son stress lors d’une prise de parole, se mettre dans un bon état physique et mental, ainsi<br>
+        qu'entraînement à la prise de parole en public.
+    </p>
+    <hr>
+    <h2>Montez vos compétences en expression orale !</h2>
+    <hr>
 
     <!-- Star rating + Comments -->
 
-<div class="rating-box">
-    <header>Partage nous ton avis</header>
-    <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-    <div class="currentRating">0 sur 5</div>
-    <div class='form-area' id='form-area'>
-        <form method="post" action="">
-            <p>
-                <input id="form-textarea" type="text" name="form-textarea">
-            </p>
-        </form>
-    </div>
-    <div class="submitButton">
-        <button type="submit" id="submitButton">Soumettre</button>
-    </div>
-    <!-- <div class="comments-area" id="comments-area">
+    <div class="rating-box">
+        <header>Partage nous ton avis</header>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="currentRating">0 sur 5</div>
+        <div class='form-area' id='form-area'>
+            <form method="post" action="">
+                <p>
+                    <input id="form-textarea" type="text" name="form-textarea">
+                </p>
+            </form>
+        </div>
+        <div class="submitButton">
+            <button type="submit" id="submitButton">Soumettre</button>
+        </div>
+        <!-- <div class="comments-area" id="comments-area">
         <div class="comments-card">
             <p> Mon commentaire blabla </p>  
         </div>       
@@ -99,35 +109,35 @@
 
 
 
-<div>
-    <p id="message-error"></p>
-</div>
-</div>
+        <div>
+            <p id="message-error"></p>
+        </div>
+    </div>
 
- <!----------- CONTACT ------------->
+    <!----------- CONTACT ------------->
 
- <h2 class="reservation" id="contactform">Réservez votre <br> Séance</h2>
- <section class="formulaire">
-     <form action="submit" class="form" id="formulaire">
-         <div class="div-input">
-             <input type="text" id="name" name="user_name" class="input-form" placeholder="Name">
-         </div>
-         <div>
-             <input type="email" id="mail" name="user_mail" class="input-form" placeholder="Email">
-         </div>
-         <div>
-             <input id="msg" name="user_message" class="input-message" placeholder="Message">
-         </div>
-         <div>
-            <label for="date">Sélectionnez une date :</label>
-            <input type="date" id="date" name="date">
-            <div id="result" class="resultDateForm"></div>
+    <h2 class="reservation" id="contactform">Réservez votre <br> Séance</h2>
+    <section class="formulaire">
+        <form action="submit" class="form" id="formulaire">
+            <div class="div-input">
+                <input type="text" id="name" name="user_name" class="input-form" placeholder="Name">
+            </div>
+            <div>
+                <input type="email" id="mail" name="user_mail" class="input-form" placeholder="Email">
+            </div>
+            <div>
+                <input id="msg" name="user_message" class="input-message" placeholder="Message">
+            </div>
+            <div>
+                <label for="date">Sélectionnez une date :</label>
+                <input type="date" id="date" name="date">
+                <div id="result" class="resultDateForm"></div>
 
-         </div>
-         <input type="submit" value="Envoyer" class="envoyez">
-         <p id="erreur" style="color: red"></p>
-     </form>
- </section>
+            </div>
+            <input type="submit" value="Envoyer" class="envoyez">
+            <p id="erreur" style="color: red"></p>
+        </form>
+    </section>
 
 
     <!-- Map -->
