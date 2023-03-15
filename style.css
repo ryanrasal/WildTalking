@@ -1,21 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* body{
-    height: 100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background: #9DC2ED;
-} */
+.nuit {
+  background-color: #32353a;
+  color: white;
+}
 
-/* NAVBAR  */
+/******************** NAVBAR  *********************/
 nav {
   display: flex;
   position: fixed;
@@ -52,8 +49,21 @@ nav ul li a {
   text-decoration: none;
   color: white;
 }
+.btn {
+  display: none;
+}
 
-/* Header */
+/******************** DIALOGUE  *********************/
+
+.dialogue {
+  display: none;
+}
+
+.containerFormContact {
+  display: none;
+}
+
+/******************** HEADER  *********************/
 
 body {
   background-color: #fafcff;
@@ -71,15 +81,15 @@ h1 {
 }
 
 .background {
-    background-image: url("./Assets/conference.jpg");
-    filter: blur(2px);
-    height: 17vh;
-    background-size: 100%;
-    padding: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  background-image: url("./Assets/conference.jpg");
+  filter: blur(2px);
+  height: 17vh;
+  background-size: 100%;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .backgroundText {
@@ -195,69 +205,69 @@ hr {
 /* Star rating + comments */
 
 .rating-box {
-    position: relative;
-    background: #fff;
-    padding: 25px 25px 35px;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  background: #fff;
+  padding: 25px 25px 35px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .rating-box header {
-    font-size: 22px;
-    color: #dadada;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 22px;
+  color: #dadada;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .rating-box .stars {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .stars i {
-    color: #e6e6e6;
-    font-size: 35px;
-    cursor: pointer
+  color: #e6e6e6;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .stars i.active {
-    color: #ff9c1a;
+  color: #ff9c1a;
 }
 
 #form-textarea {
-    margin-top: 40px;
-    height: 100px;
-    width: 100%;
-    border-radius: 7.5px;
-    border: none;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 7px;
-    font-size: 15px;
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+  border-radius: 7.5px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 7px;
+  font-size: 15px;
 }
 
 .submitButton {
-    margin-top: 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 #submitButton {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #9DC2ED;
-    font-size: 16px;
-    color: #676B73;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #9dc2ed;
+  font-size: 16px;
+  color: #676b73;
 }
 
 .comments-area {
-    margin-top: 20px;
-    background-color: green;
-    padding: 15px;
-    border-radius: 5px;
+  margin-top: 20px;
+  background-color: green;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 /******************** CONTACT  *********************/
@@ -279,9 +289,15 @@ hr {
 
 .input-form {
   width: 75%;
+  margin: 0 auto;
   margin-bottom: 30px;
   padding: 15px;
   border-radius: 10px;
+}
+.labelAndInputDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .resultDateForm {
@@ -309,34 +325,45 @@ textarea {
 
 /* MAP */
 .map {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 iframe {
-    width: 95%;
-    height: 100%;
+  width: 95%;
+  height: 100%;
 }
 
 .map-title {
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: grey;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 1200px) {
+  /******************** NAVBAR  *********************/
   nav {
-    position: relative;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 120;
     height: 70px;
     align-items: center;
     font-size: 25px;
+  }
+  button .btn {
+    outline: none;
+    background-color: transparent;
+    color: #cbd2d9;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 35px;
   }
 
   .hiddenMobile {
@@ -354,8 +381,92 @@ iframe {
   nav ul li:hover {
     text-decoration: underline;
   }
-  .formulaire {
+
+  /******************** BULL DE DIALOGIUE  *********************/
+
+  .dialogue {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  /******************** FORMUAIRE MODALE  *********************/
+
+  .formulaireModale {
+    position: sticky;
+    left: 20%;
+    top: 15%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    z-index: 50;
+    background-color: black;
+    color: white;
     width: 50%;
+  }
+  .croix {
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .form {
+    padding: 20px;
+  }
+  .inputFormModale {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .inputFormModaleText {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 35px 15px 20px 15px;
+    border-radius: 10px;
+  }
+  .titleFormModale {
+    color: black;
+  }
+  .buttonFormModale {
+    background-color: black;
+    color: white;
+    width: 75%;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .buttonFormModale:hover {
+    background-color: rgb(45, 45, 45);
+  }
+
+  /******************** HEADER  *********************/
+
+  .background {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .containerContactAndMap {
+    display: flex;
+    justify-content: space-around;
+  }
+  .formulaire {
+    width: 40%;
   }
   .containerTitleForm {
     display: flex;
@@ -367,6 +478,14 @@ iframe {
 
   .envoyez {
     width: 40%;
+  }
+  .map {
+    padding-top: 40px;
+    padding-right: 250px;
+    height: 900px;
+  }
+  iframe {
+    width: 140%;
   }
   @keyframes apparition {
     0% {
@@ -478,100 +597,87 @@ iframe {
     animation-name: apparition2;
   }
 
-    .strengths2 {
-        font-size: 3rem;
-        padding-left: 300px;
-        padding-top: 260px;
-        position: absolute;
-        top: 100%;
-        transform-origin: center bottom;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-name: apparition;
+  .strengths2 {
+    font-size: 3rem;
+    padding-left: 300px;
+    padding-top: 260px;
+    position: absolute;
+    top: 100%;
+    transform-origin: center bottom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: apparition;
+  }
+
+  .containerAnimate2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pAnimate {
+    padding-right: 300px;
+  }
+
+  .strengths4-5 {
+    font-size: 3rem;
+    padding-top: 150px;
+    padding-left: 150px;
+    position: absolute;
+    top: 100%;
+    transform-origin: center bottom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: apparition2;
+  }
+
+  .strengths5 {
+    font-size: 3rem;
+    padding-left: 700px;
+  }
+
+  .strengths3 {
+    font-size: 3rem;
+    padding-top: 150px;
+    padding-left: 500px;
+    position: absolute;
+    transform-origin: center bottom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: apparition3;
+  }
+
+  @keyframes apparition {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    .containerAnimate2 {
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
+    100% {
+      top: 380%;
+      left: 15%;
+    }
+  }
 
+  @keyframes apparition2 {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    .pAnimate {
-        padding-right: 300px;
+    100% {
+      top: 370%;
+    }
+  }
+
+  @keyframes apparition3 {
+    0% {
+      top: 100%;
+      left: 100%;
     }
 
-    .strengths4-5 {
-        font-size: 3rem;
-        padding-top: 150px;
-        padding-left: 150px;
-        position: absolute;
-        top: 100%;
-        transform-origin: center bottom;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        animation-name: apparition2;
+    100% {
+      top: 345%;
     }
-
-
-    .strengths5 {
-        font-size: 3rem;
-        padding-left: 700px;
-    }
-
-    .strengths3 {
-        font-size: 3rem;
-        padding-top: 150px;
-        padding-left: 500px;
-        position: absolute;
-        transform-origin: center bottom;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-name: apparition3;
-    }
-
-
-    @keyframes apparition {
-        0% {
-            top: 100%;
-            left: 100%;
-        }
-
-        100% {
-            top: 380%;
-            left: 15%;
-        }
-    }
-
-    @keyframes apparition2 {
-        0% {
-            top: 100%;
-            left: 100%;
-        }
-
-        100% {
-            top: 370%;
-        }
-    }
-
-    @keyframes apparition3 {
-        0% {
-            top: 100%;
-            left: 100%;
-        }
-
-        100% {
-            top: 345%;
-        }
-    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
