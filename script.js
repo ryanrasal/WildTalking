@@ -9,7 +9,6 @@ stars.forEach((star, index1) => {
   // Add an event listener that runs when the click "event" is triggered 
 
   star.addEventListener('click', () => {
-    console.log('clicked')
 
     curentStarLevel = index1 + 1;
     curentRating.innerText = `${curentStarLevel} sur 5`;
