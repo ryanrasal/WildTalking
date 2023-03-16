@@ -106,7 +106,7 @@ submitButtonForm.addEventListener("click", (e) => {
     erreurForm.innerHTML = "veuillez renseigner tous les champs";
   } else {
     e.preventDefault();
-    alert(`Bonjour ${inputNameForm} \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
+    alert(`Bonjour ${inputNameForm}, \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
   }
 });
 
@@ -145,7 +145,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('animate1').classList.remove('strengths2');
     document.getElementById('animate2').classList.remove('strengths3');
     document.getElementById('animate3').classList.remove('strengths4-5');
-  }});
+  }
+});
 /////////////// FORMULAIRE DE CONTACT Modale ////////////////////
 
 const bulleContact = document.getElementById("bulleDialogue");
@@ -161,6 +162,21 @@ const croix = document.getElementById("croix");
 croix.addEventListener("click", () => {
   formModale.classList.remove("formulaireModale");
   formModale.classList.add("containerFormContact");
+});
+
+const buttonFormModale = document.getElementById("buttonFormModale");
+const erreurModale = document.getElementById("erreurModale");
+
+buttonFormModale.addEventListener("click", (e) => {
+  const inputNameModale = document.getElementById("inputNameModale").value;
+  const inputEmailModale = document.getElementById("inputEmailModale").value;
+  const inputTextModale = document.getElementById("inputTextModale").value;
+  if (inputNameModale === "" || inputEmailModale === "" || inputTextModale === "") {
+    e.preventDefault();
+    erreurModale.innerHTML = "veuillez renseigner tous les champs";
+  } else {
+    alert(`Bonjour ${inputNameModale}, \n Votre Message à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailModale}`);
+  }
 });
 
 /////////////// DarkMode ////////////////////

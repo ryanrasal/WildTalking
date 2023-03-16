@@ -17,68 +17,82 @@
 
 <body>
 
-   <!----------- NAVBAR ------------->
+    <!----------- NAVBAR ------------->
 
-   <nav class="nav">
-    <p class="hiddenMobile">Wild Talking 🎤</p>
-    <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#rating">Témoignages</a></li>
-        <li><a href="#">reservation</a></li>
-        <button for="themeSwitch" class="btn" id="themeLogo">&#9789;</button>
-    </ul>
-</nav>
+    <nav class="nav">
+        <p class="hiddenMobile">Wild Talking 🎤</p>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#rating">Témoignages</a></li>
+            <li><a href="#">Réservation</a></li>
+            <button for="themeSwitch" class="btn" id="themeLogo">&#9789;</button>
+        </ul>
+    </nav>
 
- <!----------- Dialogue ------------->
- <div>
-    <img src="./Assets/dialogue.png" alt="Bulle de Dialogue" class="dialogue" id="bulleDialogue">
- </div>
+    <!----------- Dialogue ------------->
+    <div>
+        <img src="./Assets/dialogue.png" alt="Bulle de Dialogue" class="dialogue" id="bulleDialogue">
 
- <!----------- MODALE CONTACT ------------->
- <div class="containerFormContact" id="containerFormulaire">
-     <img src="./Assets/croix.png" alt="Posez Une Question" class="croix" id="croix">
+    </div>
+
+    <!----------- MODALE CONTACT ------------->
+    <div class="containerFormContact" id="containerFormulaire">
+        <img src="./Assets/croix.png" alt="Posez Une Question" class="croix" id="croix">
         <section class="formulaireModale">
-            <form  class="form" id="formulaire">
-                <h3 class="titleFormModale" id="contactform">Posez  Votre Question</h3>
+            <form class="formModale" id="formulaire">
+                <h3 class="titleFormModale" id="contactform">Posez Votre Question</h3>
                 <div class="div-input">
-                    <input type="text" id="name" name="user_name" class="inputFormModale" placeholder="Nom et Prénom">
+                    <input type="text" id="inputNameModale" name="user_name" class="inputFormModale"
+                        placeholder="Nom et Prénom">
                 </div>
                 <div>
-                    <input type="email" id="mail" name="user_mail" class="inputFormModale" placeholder="Email">
+                    <input type="email" id="inputEmailModale" name="user_mail" class="inputFormModale"
+                        placeholder="Email">
                 </div>
                 <div class="labelAndInputDate">
-                    <input type="text" class="inputFormModaleText" placeholder="Message">    
-                    <p id="erreur" style="color: red"></p>
+                    <input type="text" class="inputFormModaleText" id="inputTextModale" placeholder="Message">
+                    <p id="erreurModale" style="color: red"></p>
                 </div>
-                <button value="Envoyer" class="buttonFormModale">Envoyez</button>
+                <button value="Envoyer" id="buttonFormModale" class="buttonFormModale">Envoyez</button>
             </form>
-            </section>
- </div>
-
-    <!----------- HEADER ------------->
-
-    <div class="backgroundDiv">
-        <div class="background"></div>
-        <div class="backgroundText">
-            <h1>Wild Talking</h1>
-            <p>Les apprentis d'hier,<br> les leaders de demain.</p>
-        </div>
+        </section>
     </div>
 
 
-    <h2 class="title">Développez votre potentiel !</h2>
+    <!----------- HEADER ------------->
+
+
+    <div class="background"></div>
+    <div class="backgroundText">
+        <h1>Wild Talking</h1>
+        <p>Les apprentis d'hier,<br> les leaders de demain.</p>
+    </div>
+
+
+
+    <h2 class="title">Donnez une voix à votre pensée et montez sur scène !</h2>
     <div class="concept">
-        <p>Comprendre les ressorts de l’impact d’une prise de parole<br>
-            Les fondamentaux de la communication.<br>
-            Les clés d’une communication réussie.</p>
         <img src="./Assets/speakerAlone.jpg">
+        <p>
+            Selon des nombreuses études, la prise de parole en public est une des plus grandes peurs que les gens
+            connaissent. « Se déshabiller »
+            devant les autres, présenter ses conviction, inspirer les autres, prendre une position devant un public peut
+            nous faire peur.
+            Monter sur une scène ne nous engage pas seulement être nous-même, mais la meilleure version de nous-même.
+            Cela peut paraitre difficile,
+            car on croit souvent qu’il s’agit de devenir aussi éloquent que Winston Churchill, J.F. Kennedy ou Martin
+            Luther King.</p>
     </div>
     <hr>
     <div class="conceptIdea">
         <img src="./Assets/speaker2.jpg">
-        <p>Construire son message,<br>
-            Tester son impact,<br>
-            Feedbacks constructifs des participants et du coach.
+        <p>Ces convictions sont en vérité que des idées reçues. Toute personne en est capable de transmettre un message,
+            est peut devenir un leader.
+            On ne naît pas en étant un leader, mais on le devient en s’entraînant.
+            La prise de parole en public c’est la meilleure opportunité de se lancer devant les autres et de s’entraîner
+            sur l’art de convaincre.<br>
+            Pour cela tu aurais certainement besoin de t’entraîner sur les points suivants et chez la Wild Talking, tu
+            es venu à l’endroit parfait pour apprendre :
         </p>
     </div>
     <hr>
@@ -98,15 +112,30 @@
         </div>
     </div>
     <hr>
-    <img class="imgDetails" src="./Assets/groupspeaking.jpg">
-    <p class="details">Capter l’attention grâce à son storytelling,
-        comprendre ce qu’est le Storytelling, passer des faits à la narration.<br>
-        <br>
-        Gérer son stress lors d’une prise de parole, se mettre dans un bon état physique et mental, ainsi<br>
-        qu'entraînement à la prise de parole en public.
-    </p>
+    <div class="detailsInspiration">
+        <img class="imgDetails" src="./Assets/speakingpublic.jpg">
+        <div class="containerListDetails">
+            <ul class="details">
+                <li>Apprendre à construire ton message</li>
+                <li>Préparer, structurer et délivrer un discours préparé</li>
+                <li>Respecter une limite de temps imposée</li>
+                <li>Définir un objectif : inspirer, raconter une histoire, faire une présentation</li>
+                <li>Improviser un discours en 30 secondes</li>
+                <li>Apprendre à contrôler la voix, sa tonalité et son volume</li>
+                <li>Contrôler sa respiration, comprendre la puissance des pauses</li>
+                <li>Devenir conscient de l'importance des gestes sur scène</li>
+                <li>Entraîne ton ancrage sur scène, les transitions de ta posture </li>
+                <li>Devenir un meilleur orateur en maîtrisant la grammaire</li>
+                <li>Réaliser un discours efficace</li>
+                <li>Garder le contact avec le public, prendre la température de la salle</li>
+                <li>Améliore tes compétences en recevant du feedback constructif des autres</li>
+                <li>Apprendre à donner du feedback en évaluant les autres orateurs</li>
+            </ul>
+        </div>
+    </div>
     <hr>
-    <h2>Montez vos compétences en expression orale !</h2>
+    <h2 class="inspiration">Montez vos compétences en expression orale !</h2>
+
     <hr>
     
     <!-- Star rating + Comments -->
@@ -131,14 +160,9 @@
         <div class="submitButton">
             <button type="submit" id="submitButton">Soumettre</button>
         </div>
-    </div>
-    
-    <!-- <div class="comments-area" id="comments-area">
-        <div class="comments-card">
-            <p class="comment-value"> Mon commentaire blabla </p>  
-        </div>       
-</div> -->
+        </div>
 
+       
 <div>
     <p id="message-error"></p>
 </div>
@@ -165,41 +189,59 @@
 </div>
 </div>
  
- <!----------- CONTACT ------------->
+     <!----------- CONTACT ------------->
 
- <div class="containerContactAndMap">
-    <section class="formulaire">
-        <div class="containerTitleForm">
-            <h2  id="contactform">Réservez votre <br> Séance</h2>
+    <div class="containerContactAndMap">
+        <section class="formulaire">
+            <div class="containerTitleForm">
+                <h2 id="contactform">Réservez votre <br> Séance</h2>
+            </div>
+            <form class="form">
+                <div class="div-input">
+                    <input type="text" name="user_name" class="input-form" placeholder="Nom et Prénom"
+                        id="inputNameForm">
+                </div>
+                <div>
+                    <input type="email" name="user_mail" class="input-form" placeholder="Email" id="inputEmailForm">
+                </div>
+                <div class="labelAndInputDate">
+                    <label for="date">Sélectionnez une date :</label>
+                    <input type="date" id="date" name="date" class="input-form">
+                    <div id="result" class="resultDateForm"></div>
+                </div>
+                <button value="Envoyer" class="envoyez" id="submitButtonForm">Envoyez</button>
+                <p id="erreurForm" style="color: red"></p>
+            </form>
+        </section>
+
+
+        <!-- Map -->
+        <div class="map">
+            <div class="map-title">
+                <h2>Ou sommes nous?</h2>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.967201933927!2d4.8271744!3d45.7462982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Training%20Developer%20Web%2C%20Data%20Analyst!5e0!3m2!1sro!2sfr!4v1678360557523!5m2!1sro!2sfr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <form  class="form">
-            <div class="div-input">
-                <input type="text" name="user_name" class="input-form" placeholder="Nom et Prénom" id="inputNameForm">
-            </div>
-            <div>
-                <input type="email" name="user_mail" class="input-form" placeholder="Email" id="inputEmailForm">
-            </div>
-            <div class="labelAndInputDate">
-                <label for="date">Sélectionnez une date :</label>
-                <input type="date" id="date" name="date" class="input-form">
-                <div id="result" class="resultDateForm"></div>
-            </div>
-            <button value="Envoyer" class="envoyez" id="submitButtonForm">Envoyez</button>
-            <p id="erreurForm" style="color: red"></p>
-        </form>
-    </section>
-
-
-<!-- Map -->
-    <div class="map">
-        <div class="map-title">
-            <h2>Ou sommes nous?</h2>
-        </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.967201933927!2d4.8271744!3d45.7462982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Training%20Developer%20Web%2C%20Data%20Analyst!5e0!3m2!1sro!2sfr!4v1678360557523!5m2!1sro!2sfr"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</div>
+
+    <!----------- FOOTER ------------->
+
+
+    <footer class="footer" id="footer-dark-mode">
+        <div class="conditions">
+            <p>Conditions</p>
+            <p>Mentions légales</p>
+            <p>2023 All rights reserved</p>
+        </div>
+        <div class="socials">
+            <img src="/Assets/facebook.png" alt="facebook logo">
+            <img src="/Assets/instagram.png" alt="instagram logo">
+            <img src="/Assets/twitter.png" alt="twitter logo">
+        </div>
+    </footer>
 
 </body>
 
