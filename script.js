@@ -2,6 +2,12 @@
 // Select all the elements with the "i" tag and store them in a NodeList called "stars"
 const stars = document.querySelectorAll(".stars i");
 // Loop trough the "stars" NodeList
+stars.forEach((star, index1) => {
+  // Add an event listener that runs when the click "event" is triggered
+  star.addEventListener("click", () => {
+    // Loop through the "stars" NodeList Again
+    stars.forEach((star, index2) => {
+      //   Add the "active" class to the clicked star and any stars with a lower index
 
 let curentRating=document.querySelector('.currentRating')
 let curentStarLevel=0;
@@ -32,6 +38,7 @@ let formArea = document.getElementById("form-area");
 
 submitButton.addEventListener("click", () => {
   // 1 get the values
+
   let inputForm = document.getElementById('form-textarea').value;
   let messageError=document.getElementById('message-error');
   let starLevel=curentRating;
@@ -106,7 +113,7 @@ submitButtonForm.addEventListener("click", (e) => {
     erreurForm.innerHTML = "veuillez renseigner tous les champs";
   } else {
     e.preventDefault();
-    alert(`Bonjour ${inputNameForm} \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
+    alert(`Bonjour ${inputNameForm}, \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
   }
 });
 
