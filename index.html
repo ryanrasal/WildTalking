@@ -24,7 +24,7 @@
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#rating">Témoignages</a></li>
-            <li><a href="#">reservation</a></li>
+            <li><a href="#">Réservation</a></li>
             <button for="themeSwitch" class="btn" id="themeLogo">&#9789;</button>
         </ul>
     </nav>
@@ -38,19 +38,21 @@
     <div class="containerFormContact" id="containerFormulaire">
         <img src="./Assets/croix.png" alt="Posez Une Question" class="croix" id="croix">
         <section class="formulaireModale">
-            <form class="form" id="formulaire">
+            <form class="formModale" id="formulaire">
                 <h3 class="titleFormModale" id="contactform">Posez Votre Question</h3>
                 <div class="div-input">
-                    <input type="text" id="name" name="user_name" class="inputFormModale" placeholder="Nom et Prénom">
+                    <input type="text" id="inputNameModale" name="user_name" class="inputFormModale"
+                        placeholder="Nom et Prénom">
                 </div>
                 <div>
-                    <input type="email" id="mail" name="user_mail" class="inputFormModale" placeholder="Email">
+                    <input type="email" id="inputEmailModale" name="user_mail" class="inputFormModale"
+                        placeholder="Email">
                 </div>
                 <div class="labelAndInputDate">
-                    <input type="text" class="inputFormModaleText" placeholder="Message">
-                    <p id="erreur" style="color: red"></p>
+                    <input type="text" class="inputFormModaleText" id="inputTextModale" placeholder="Message">
+                    <p id="erreurModale" style="color: red"></p>
                 </div>
-                <button value="Envoyer" class="buttonFormModale">Envoyez</button>
+                <button value="Envoyer" id="buttonFormModale" class="buttonFormModale">Envoyez</button>
             </form>
         </section>
     </div>
@@ -68,20 +70,27 @@
 
     <h2 class="title">Donnez une voix à votre pensée et montez sur scène !</h2>
     <div class="concept">
-        <p>
-            Selon des nombreuses études, la prise de parole en public est une des plus grandes peurs que les gens connaissent. « Se déshabiller »
-             devant les autres, présenter ses conviction, inspirer les autres, prendre une position devant un public peut nous faire peur.
-            Monter sur une scène ne nous engage pas seulement être nous-même, mais la meilleure version de nous-même. Cela peut paraitre difficile,
-             car on croit souvent qu’il s’agit de devenir aussi éloquent que Winston Churchill, J.F. Kennedy ou Martin Luther King.</p>
         <img src="./Assets/speakerAlone.jpg">
+        <p>
+            Selon des nombreuses études, la prise de parole en public est une des plus grandes peurs que les gens
+            connaissent. « Se déshabiller »
+            devant les autres, présenter ses conviction, inspirer les autres, prendre une position devant un public peut
+            nous faire peur.
+            Monter sur une scène ne nous engage pas seulement être nous-même, mais la meilleure version de nous-même.
+            Cela peut paraitre difficile,
+            car on croit souvent qu’il s’agit de devenir aussi éloquent que Winston Churchill, J.F. Kennedy ou Martin
+            Luther King.</p>
     </div>
     <hr>
     <div class="conceptIdea">
         <img src="./Assets/speaker2.jpg">
-        <p>Ces convictions sont en vérité que des idées reçues. Toute personne en est capable de transmettre un message, est peut devenir un leader.
+        <p>Ces convictions sont en vérité que des idées reçues. Toute personne en est capable de transmettre un message,
+            est peut devenir un leader.
             On ne naît pas en étant un leader, mais on le devient en s’entraînant.
-            La prise de parole en public c’est la meilleure opportunité de se lancer devant les autres et de s’entraîner sur l’art de convaincre.
-            Pour cela tu aurais certainement besoin de t’entraîner sur les points suivants et chez la Wild Talking, tu es venu à l’endroit parfait pour apprendre :
+            La prise de parole en public c’est la meilleure opportunité de se lancer devant les autres et de s’entraîner
+            sur l’art de convaincre.<br>
+            Pour cela tu aurais certainement besoin de t’entraîner sur les points suivants et chez la Wild Talking, tu
+            es venu à l’endroit parfait pour apprendre :
         </p>
     </div>
     <hr>
@@ -102,10 +111,25 @@
     </div>
     <hr>
     <div class="detailsInspiration">
-        <img class="imgDetails" src="./Assets/groupspeaking.jpg">
-        <p class="details">La prise de parole en public c’est la meilleure opportunité de se lancer devant les autres et de s’entraîner sur l’art de convaincre.
-            Pour cela tu aurais certainement besoin de t’entraîner sur les points suivants et chez la Wild Talking, tu es venu à l’endroit parfait pour apprendre :
-        </p>
+        <img class="imgDetails" src="./Assets/speakingpublic.jpg">
+        <div class="containerListDetails">
+            <ul class="details">
+                <li>Apprendre à construire ton message</li>
+                <li>Préparer, structurer et délivrer un discours préparé</li>
+                <li>Respecter une limite de temps imposée</li>
+                <li>Définir un objectif : inspirer, raconter une histoire, faire une présentation</li>
+                <li>Improviser un discours en 30 secondes</li>
+                <li>Apprendre à contrôler la voix, sa tonalité et son volume</li>
+                <li>Contrôler sa respiration, comprendre la puissance des pauses</li>
+                <li>Devenir conscient de l'importance des gestes sur scène</li>
+                <li>Entraîne ton ancrage sur scène, les transitions de ta posture </li>
+                <li>Devenir un meilleur orateur en maîtrisant la grammaire</li>
+                <li>Réaliser un discours efficace</li>
+                <li>Garder le contact avec le public, prendre la température de la salle</li>
+                <li>Améliore tes compétences en recevant du feedback constructif des autres</li>
+                <li>Apprendre à donner du feedback en évaluant les autres orateurs</li>
+            </ul>
+        </div>
     </div>
     <hr>
     <h2 class="inspiration">Montez vos compétences en expression orale !</h2>
@@ -194,7 +218,20 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+    <!----------- FOOTER ------------->
 
+    <footer class="footer" id="footer-dark-mode">
+        <div class="conditions">
+            <p>Conditions</p>
+            <p>Mentions légales</p>
+            <p>2023 All rights reserved</p>
+        </div>
+        <div class="socials">
+            <img src="/Assets/facebook.png" alt="facebook logo">
+            <img src="/Assets/instagram.png" alt="instagram logo">
+            <img src="/Assets/twitter.png" alt="twitter logo">
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -164,6 +164,21 @@ croix.addEventListener("click", () => {
   formModale.classList.add("containerFormContact");
 });
 
+const buttonFormModale = document.getElementById("buttonFormModale");
+const erreurModale = document.getElementById("erreurModale");
+
+buttonFormModale.addEventListener("click", (e) => {
+  const inputNameModale = document.getElementById("inputNameModale").value;
+  const inputEmailModale = document.getElementById("inputEmailModale").value;
+  const inputTextModale = document.getElementById("inputTextModale").value;
+  if (inputNameModale === "" || inputEmailModale === "" || inputTextModale === "") {
+    e.preventDefault();
+    erreurModale.innerHTML = "veuillez renseigner tous les champs";
+  } else {
+    alert(`Bonjour ${inputNameModale}, \n Votre Message à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailModale}`);
+  }
+});
+
 /////////////// DarkMode ////////////////////
 
 const body = document.getElementsByTagName("body")[0];
