@@ -280,15 +280,31 @@ hr {
   margin-top: 20px;
 }
 
+.rating-star-image{
+ display:none;
+}
 /******************** Tarifs  *********************/
-.tarifs {
-  margin: 50px;
+.titre-tarifs {
+text-align: center;
+margin: 10px auto;
+font-size: 1.5rem;
+padding-bottom: 10px;
+}
+
+.tarifs{
+  margin:5%;
   font-size: 1rem;
   line-height: 20px;
   border-radius: 10px;
   padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.prix{
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+
 
 
 /******************** CONTACT  *********************/
@@ -459,9 +475,60 @@ iframe {
     cursor: pointer;
   }
 
-  /******************** Star-rating  *********************/
-  .rating-box {
-    width: 35%;
+/******************** Star-rating  *********************/
+.rating-box{
+  width: 35%;
+}
+
+.rating-star-image{
+  display: block;
+  width: 80%;
+  height: 80%;
+  border-radius: 12.5px;
+}
+
+.container-rating-image{
+  display: flex;
+ align-items: center;
+ gap:7rem;
+ margin-left: 12.5%;
+ 
+}
+
+/******************** Tarifs  *********************/
+.titre-tarifs {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  }
+
+.tarifs{
+  margin:50px;
+  font-size: 1.2rem;
+  line-height: 35px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.prix{
+  font-size: 1.3rem;
+  text-align: center;
+}
+  /******************** FORMUAIRE MODALE  *********************/
+
+  .formulaireModale {
+    position: sticky;
+    left: 20%;
+    top: 15%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    z-index: 50;
+    background-color: black;
+    color: white;
+    width: 50%;
   }
 
   /******************** Tarifs  *********************/
