@@ -127,7 +127,7 @@ h2 {
   font-size: 0.7rem;
   line-height: 1.8;
   font-family: "Montserrat", sans-serif;
-  padding: 5px;
+  padding: 5%;
 }
 
 .concept img {
@@ -157,15 +157,16 @@ hr {
   font-size: 0.7rem;
   line-height: 1.8;
   font-family: "Montserrat", sans-serif;
-  padding-left: 10px;
-  padding-top: 5px;
+  padding: 10px;
 }
 
 .strengths {
   height: 225px;
   background-image: url("./Assets/idea.jpg");
   background-size: 100%;
-  padding: 30px;
+  padding-top: 70px;
+  padding-left: 20px;
+  line-height: 1.8rem;
   color: white;
   background-repeat: no-repeat;
 }
@@ -183,7 +184,7 @@ hr {
 
 .containerListDetails {
     margin:5%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 20px;
     border-radius: 10px;
     padding: 20px;
@@ -438,6 +439,10 @@ iframe {
     padding-left: 15px;
   }
 
+  nav ul {
+  padding-left: 700px;
+  }
+
   nav ul li {
     font-size: 25px;
   }
@@ -597,7 +602,7 @@ iframe {
     height: 90%;
     width: 40%;
     border-radius: 10px;
-    margin-left: 10%;
+    margin-left: 5%;
   }
 
   .conceptIdea p {
@@ -670,7 +675,7 @@ iframe {
     }
 
     100% {
-      top: 320%;
+      top: 345%;
     }
   }
 
@@ -681,7 +686,8 @@ iframe {
     }
 
     100% {
-      top: 365%;
+      top: 395%;
+      right: 28%;
     }
   }
 
@@ -692,7 +698,8 @@ iframe {
     }
 
     100% {
-      top: 390%;
+      top: 430%;
+      right: 60%;
     }
   }
 
@@ -703,7 +710,7 @@ iframe {
 
   .imgDetails {
     height: 35%;
-    width: 24%;
+    width: 25%;
     border-radius: 10px;
     margin-top: 5%;
     margin-left: 10%;
@@ -742,6 +749,7 @@ iframe {
     display: flex;
     justify-content: center;
   }
+  
 
   .input-form {
     width: 40%;
