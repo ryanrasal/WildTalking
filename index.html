@@ -32,28 +32,28 @@
     <!----------- Dialogue ------------->
     <div>
         <img src="./Assets/dialogue.png" alt="Bulle de Dialogue" class="dialogue" id="bulleDialogue">
-    </div>
+     </div>
 
-    <!----------- MODALE CONTACT ------------->
-    <div class="containerFormContact" id="containerFormulaire">
-        <img src="./Assets/croix.png" alt="Posez Une Question" class="croix" id="croix">
-        <section class="formulaireModale">
-            <form class="form" id="formulaire">
-                <h3 class="titleFormModale" id="contactform">Posez Votre Question</h3>
-                <div class="div-input">
-                    <input type="text" id="name" name="user_name" class="inputFormModale" placeholder="Nom et Prénom">
-                </div>
-                <div>
-                    <input type="email" id="mail" name="user_mail" class="inputFormModale" placeholder="Email">
-                </div>
-                <div class="labelAndInputDate">
-                    <input type="text" class="inputFormModaleText" placeholder="Message">
-                    <p id="erreur" style="color: red"></p>
-                </div>
-                <button value="Envoyer" class="buttonFormModale">Envoyez</button>
-            </form>
-        </section>
-    </div>
+     <!----------- MODALE CONTACT ------------->
+     <div class="containerFormContact" id="containerFormulaire">
+         <img src="./Assets/croix.png" alt="Posez Une Question" class="croix" id="croix">
+            <section class="formulaireModale">
+                <form class="formModale" id="formulaire">
+                    <h3 class="titleFormModale" id="contactform">Posez  Votre Question</h3>
+                    <div class="div-input">
+                        <input type="text" id="inputNameModale" name="user_name" class="inputFormModale" placeholder="Nom et Prénom">
+                    </div>
+                    <div>
+                        <input type="email" id="inputEmailModale" name="user_mail" class="inputFormModale" placeholder="Email">
+                    </div>
+                    <div class="labelAndInputDate">
+                        <input type="text" class="inputFormModaleText" id="inputTextModale" placeholder="Message">    
+                        <p id="erreurModale" style="color: red"></p>
+                    </div>
+                    <button value="Envoyer" id="buttonFormModale" class="buttonFormModale">Envoyez</button>
+                </form>
+                </section>
+     </div>
 
     <!----------- HEADER ------------->
 
@@ -194,6 +194,21 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+
+    <!----------- FOOTER ------------->
+
+    <footer class="footer" id="footer-dark-mode">
+        <div class="conditions">
+            <p>Conditions</p>
+            <p>Mentions légales</p>
+            <p>2023 All rights reserved</p>
+        </div>
+        <div class="socials">
+            <img src="/Assets/facebook.png" alt="facebook logo">
+            <img src="/Assets/instagram.png" alt="instagram logo">
+            <img src="/Assets/twitter.png" alt="twitter logo">
+        </div>
+    </footer>
 
 </body>
 
