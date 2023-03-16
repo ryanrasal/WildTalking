@@ -344,7 +344,47 @@ iframe {
   margin-bottom: 8px;
 }
 
+ /******************** FOOTER  *********************/
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12%;
+}
+
+.conditions {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  left: 5vw;
+  bottom: 0.5vh;
+}
+
+.socials {
+  min-width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 1vh;
+  right: 5vw;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (min-width: 1200px) {
+
   /******************** NAVBAR  *********************/
   nav {
     position: fixed;
@@ -387,7 +427,7 @@ iframe {
   .dialogue {
     display: block;
     position: fixed;
-    bottom: 20px;
+    bottom: 100px;
     right: 20px;
     width: 80px;
     height: 80px;
@@ -398,8 +438,8 @@ iframe {
   /******************** FORMUAIRE MODALE  *********************/
 
   .formulaireModale {
-    position: sticky;
-    left: 20%;
+    position: fixed;
+    left: 25%;
     top: 15%;
     margin: 0 auto;
     border-radius: 10px;
@@ -409,17 +449,26 @@ iframe {
     color: white;
     width: 50%;
   }
+
   .croix {
-    height: 50px;
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
+    height: 63px;
+    margin: 9px;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    z-index: 200;
+    border: 1px solid white;
   }
-  .form {
-    padding: 20px;
+
+  .formModale {
+    margin: 30px auto;
+    padding: 30px;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
   }
+
   .inputFormModale {
     width: 80%;
     margin: 0 auto;
@@ -461,17 +510,21 @@ iframe {
     background-repeat: no-repeat;
     background-position: center;
   }
+
   .containerContactAndMap {
     display: flex;
     justify-content: space-around;
   }
+
   .formulaire {
     width: 40%;
   }
+
   .containerTitleForm {
     display: flex;
     justify-content: center;
   }
+
   .input-form {
     width: 40%;
   }
@@ -679,5 +732,36 @@ iframe {
     100% {
       top: 345%;
     }
+  }
+
+  /******************** FOOTER  *********************/
+
+  .footer {
+    margin-bottom: 0px;
+    margin-top: 70px;
+  }
+
+  .conditions {
+    font-size: 1em;
+    line-height: 15px;
+    flex-direction: row;
+    left: 1vw;
+    bottom: 0;
+  }
+
+  .conditions p {
+    margin: auto 1vw;
+  }
+
+  .socials {
+    min-width: 25vw;
+    bottom: 0vw;
+    right: 1vw;
+  }
+
+  .socials img {
+    width: 34px;
+    height: 34px;
+    margin: auto;
   }
 }

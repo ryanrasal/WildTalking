@@ -2,14 +2,11 @@
 // Select all the elements with the "i" tag and store them in a NodeList called "stars"
 const stars = document.querySelectorAll(".stars i");
 // Loop trough the "stars" NodeList
-console.log(stars);
 stars.forEach((star, index1) => {
   // Add an event listener that runs when the click "event" is triggered
-  console.log(index1);
   star.addEventListener("click", () => {
     // Loop through the "stars" NodeList Again
     stars.forEach((star, index2) => {
-      //   console.log(index2)
       //   Add the "active" class to the clicked star and any stars with a lower index
       // and remove the "active" class form any stars with a higher index
       index1 >= index2
@@ -27,7 +24,6 @@ submitButton.addEventListener("click", () => {
   // 1 get the values
   let inputForm = document.getElementById("form-textarea").value;
   let messageError = document.getElementById("message-error");
-  console.log(inputForm);
 
   if (inputForm === "") {
     return (messageError.innerHTML = "Le champ doit être rempli");
@@ -85,17 +81,14 @@ const submitButtonForm = document.getElementById("submitButtonForm");
 const erreurForm = document.getElementById("erreurForm");
 
 submitButtonForm.addEventListener("click", (e) => {
-  console.log('coucou')
   const inputNameForm = document.getElementById("inputNameForm").value;
   const inputEmailForm = document.getElementById("inputEmailForm").value;
   if (inputNameForm === "" || inputEmailForm === "") {
     e.preventDefault();
-    console.log('if')
     erreurForm.innerHTML = "veuillez renseigner tous les champs";
   } else {
-    console.log('else')
     e.preventDefault();
-    alert(`Bonjour ${inputNameForm} \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
+    alert(`Bonjour ${inputNameForm}, \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
   }
 });
 
@@ -134,6 +127,21 @@ const croix = document.getElementById("croix");
 croix.addEventListener("click", () => {
   formModale.classList.remove("formulaireModale");
   formModale.classList.add("containerFormContact");
+});
+
+const buttonFormModale = document.getElementById("buttonFormModale");
+const erreurModale = document.getElementById("erreurModale");
+
+buttonFormModale.addEventListener("click", (e) => {
+  const inputNameModale = document.getElementById("inputNameModale").value;
+  const inputEmailModale = document.getElementById("inputEmailModale").value;
+  const inputTextModale = document.getElementById("inputTextModale").value;
+  if (inputNameModale === "" || inputEmailModale === "" || inputTextModale === "") {
+    e.preventDefault();
+    erreurModale.innerHTML = "veuillez renseigner tous les champs";
+  } else {
+    alert(`Bonjour ${inputNameModale}, \n Votre Message à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailModale}`);
+  }
 });
 
 /////////////// DarkMode ////////////////////
