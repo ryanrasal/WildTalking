@@ -301,6 +301,33 @@ color: #676b73;
   margin-top: 20px;
 }
 
+.rating-star-image{
+ display:none;
+}
+/******************** Tarifs  *********************/
+.titre-tarifs {
+text-align: center;
+margin: 10px auto;
+font-size: 1.5rem;
+padding-bottom: 10px;
+}
+
+.tarifs{
+  margin:5%;
+  font-size: 1rem;
+  line-height: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.prix{
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+
+
+
 /******************** CONTACT  *********************/
 .formulaire {
   padding-bottom: 20px;
@@ -433,15 +460,42 @@ iframe {
   width: 35%;
 }
 
+.rating-star-image{
+  display: block;
+  width: 80%;
+  height: 80%;
+  border-radius: 12.5px;
+}
+
+.container-rating-image{
+  display: flex;
+ align-items: center;
+ gap:7rem;
+ margin-left: 12.5%;
+ 
+}
+
 /******************** Tarifs  *********************/
+.titre-tarifs {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  }
+
 .tarifs{
   margin:50px;
   font-size: 1.2rem;
+  line-height: 35px;
   border-radius: 10px;
   padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.prix{
+  font-size: 1.3rem;
+  text-align: center;
+}
   /******************** FORMUAIRE MODALE  *********************/
 
   .formulaireModale {
@@ -508,48 +562,8 @@ iframe {
     background-repeat: no-repeat;
     background-position: center;
   }
-  @keyframes apparition {
-    0% {
-      top: 100%;
-      left: 100%;
-    }
-
-    100% {
-      top: 380%;
-      left: 15%;
-    }
-  }
-
-  @keyframes apparition2 {
-    0% {
-      top: 100%;
-      left: 100%;
-    }
-
-    100% {
-      top: 370%;
-    }
-  }
-
-  @keyframes apparition3 {
-    0% {
-      top: 100%;
-      left: 100%;
-    }
-
-    100% {
-      top: 345%;
-    }
-  }
-  .animate {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-  }
-
-  .animate.visible {
-    opacity: 1;
-  }
-  .backgroundText h1 {
+  
+    .backgroundText h1 {
     opacity: 0;
   }
 
