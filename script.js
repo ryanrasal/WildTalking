@@ -3,20 +3,19 @@
 const stars = document.querySelectorAll(".stars i");
 // Loop trough the "stars" NodeList
 
-let curentRating=document.querySelector('.currentRating')
-let curentStarLevel=0;
-stars.forEach((star,index1) => {
+let curentRating = document.querySelector('.currentRating')
+let curentStarLevel = 0;
+stars.forEach((star, index1) => {
   // Add an event listener that runs when the click "event" is triggered 
- 
-  star.addEventListener('click',() =>{
-    console.log('clicked')
-   
-    curentStarLevel=index1+1;
-    curentRating.innerText=`${curentStarLevel} sur 5`;
+
+  star.addEventListener('click', () => {
+
+    curentStarLevel = index1 + 1;
+    curentRating.innerText = `${curentStarLevel} sur 5`;
 
     // Loop through the "stars" NodeList Again
-    stars.forEach((star,index2) => {
-      
+    stars.forEach((star, index2) => {
+
       //   Add the "active" class to the clicked star and any stars with a lower index 
       // and remove the "active" class form any stars with a higher index
       index1 >= index2
@@ -33,19 +32,19 @@ let formArea = document.getElementById("form-area");
 submitButton.addEventListener("click", () => {
   // 1 get the values
   let inputForm = document.getElementById('form-textarea').value;
-  let messageError=document.getElementById('message-error');
-  let starLevel=curentRating;
-  
-   if(inputForm ===''){
+  let messageError = document.getElementById('message-error');
+  let starLevel = curentRating;
+
+  if (inputForm === '') {
     return messageError.innerHTML = 'Le champ doit être rempli'
   } else {
     messageError.innerHTML = '';
   }
   // 2 create elements
-  let commentArea=document.createElement('div');
-  let commentValue=document.createElement('p');
-  commentValue.innerHTML=`&#11088  ${curentStarLevel} / 5 <br> ${inputForm}`;
-  
+  let commentArea = document.createElement('div');
+  let commentValue = document.createElement('p');
+  commentValue.innerHTML = `&#11088  ${curentStarLevel} / 5 <br> ${inputForm}`;
+
   // let curentRating=document.createElement('div')
   // curentRating.innerText=`${curentRating}`;
 
@@ -53,7 +52,7 @@ submitButton.addEventListener("click", () => {
   commentArea.classList.add('comments-area');
   commentValue.classList.add('comment-value');
   // inputForm.classList.add('comment-value');
-  
+
 
   // 4 specify the dependency of the sections
   formArea.appendChild(commentArea).appendChild(commentValue);
@@ -106,9 +105,11 @@ submitButtonForm.addEventListener("click", (e) => {
     erreurForm.innerHTML = "veuillez renseigner tous les champs";
   } else {
     e.preventDefault();
-    alert(`Bonjour ${inputNameForm} \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
+    alert(`Bonjour ${inputNameForm}, \n Votre reservation à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailForm}`);
   }
 });
+
+//////////// ANIMATIONS ///////////
 
 const animateElements = document.querySelectorAll(".animate");
 
@@ -162,6 +163,21 @@ const croix = document.getElementById("croix");
 croix.addEventListener("click", () => {
   formModale.classList.remove("formulaireModale");
   formModale.classList.add("containerFormContact");
+});
+
+const buttonFormModale = document.getElementById("buttonFormModale");
+const erreurModale = document.getElementById("erreurModale");
+
+buttonFormModale.addEventListener("click", (e) => {
+  const inputNameModale = document.getElementById("inputNameModale").value;
+  const inputEmailModale = document.getElementById("inputEmailModale").value;
+  const inputTextModale = document.getElementById("inputTextModale").value;
+  if (inputNameModale === "" || inputEmailModale === "" || inputTextModale === "") {
+    e.preventDefault();
+    erreurModale.innerHTML = "veuillez renseigner tous les champs";
+  } else {
+    alert(`Bonjour ${inputNameModale}, \n Votre Message à bien été prise en compte. \nVous allez recevoir une confirmation à l'adresse suivante : \n ${inputEmailModale}`);
+  }
 });
 
 /////////////// DarkMode ////////////////////
